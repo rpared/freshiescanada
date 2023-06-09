@@ -1,3 +1,3 @@
 # freshiescanada
-Info for Toronto incnoming international college students. 
+Info for Toronto incoming international college students. 
 By Team Alpha
