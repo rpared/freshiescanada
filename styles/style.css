@@ -22,7 +22,7 @@ header #logo{
         }
         #navbar_back{
             max-height: 130px;
-            background-image: url("/images/navBarBackgrnd.png");
+            background-image: url("images/navBarBackgrnd.png");
             background-size: cover;
         }
 
