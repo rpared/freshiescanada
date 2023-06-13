@@ -13,7 +13,7 @@ header #logo{
 
 @font-face {
     font-family: navbarFont;
-    src: url("/fonts/Rubik-Light.ttf") format("truetype");
+    src: url("fonts/Rubik-Light.ttf") format("truetype");
 }
         nav{
             margin-top: 0.5em;
