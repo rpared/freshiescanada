@@ -74,6 +74,20 @@ header #logo{
     .slider img{
          width: 100%;
     }
+    .slider img:hover + .tooltip{
+        display: block;
+    }
+    .tooltip{
+        font-size: 2em;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        display: none;
+        color: #e25252;
+        text-shadow:0 0 15px #ffffff;
+        
+    }
+
     fn{
         font-size: 0.6em;
         color: rgb(142, 142, 142);
