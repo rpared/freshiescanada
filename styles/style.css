@@ -118,6 +118,7 @@ header #logo{
         padding: 0;
         display: inline;
         height: 38px;
+        border-radius: 50%;
     }
 /*ABOUT*/
     #about{
@@ -141,3 +142,16 @@ header #logo{
         font-size: 1.2em;
         color: #595959;
     }
+
+    /*Services*/
+    #services{
+        margin: auto;
+        color: rgb(45, 45, 45);
+        border-left: 1px solid #e25252;
+        border-radius: 3px;
+        margin: 2em 12em;
+        
+    }
+
+
+  
