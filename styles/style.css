@@ -9,6 +9,8 @@ header #logo{
     margin: 0.5em 1em;
 }
 
+
+
 /*NAVBAR*/
 
 @font-face {
@@ -19,6 +21,7 @@ header #logo{
             margin-top: 0.5em;
             float: right;
             vertical-align: middle;
+            /* border: 3px solid red; */
         }
         #navbar_back{
             max-height: 130px;
@@ -32,15 +35,13 @@ header #logo{
             padding: 0.5em 2em;
             /* background-image: radial-gradient( pink, orange, red);
             border-bottom: 7px solid rgba(203, 101, 110, 0.85);*/
-            vertical-align: middle; 
         }
 
         nav ul li{
             font-family: navbarFont, sans-serif;
-            margin: 0 1em;
+            margin: 0.3em 1em 0 1em;
             display: inline-block;
             font-weight: 700;
-            margin-top: 0.3em;
             font-size: 1.2em;
         }
 
@@ -51,7 +52,6 @@ header #logo{
             /* border: 1px solid #000; */
             text-decoration: none;
             text-shadow: 0 0 5px #280606;
-                
         }
         .listarrow{
             width: 16px;
@@ -59,6 +59,11 @@ header #logo{
             margin-top: 4px;
             -webkit-filter: drop-shadow(0 0 3px #280606);
             filter: drop-shadow(0 0 3px #280606);
+        }
+
+        /*Button for responsive menu, it is a checkbox*/
+        .hamburgerContainer input, .hamburgerImg{
+            display: none;
         }
 
         nav li a:hover, li a:focus{
@@ -69,6 +74,44 @@ header #logo{
         nav li a:active{
             opacity: 0.2;
         }
+
+        .dropdown{
+            cursor: pointer;
+        }
+        
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            /* right: 11.5em; */
+            top: 4.4em;
+            margin-top: 20px;
+            padding: 0.2em;
+            font-size: 0.8em;
+            margin: 0 auto;
+            color: #595959;
+            /* border-left: 1px solid #e25252; */
+            background-color: #fff;
+            text-shadow: none;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            text-align: left;
+            color: #595959;
+            display: block;
+            text-align: left;
+            background-color: #fff;
+            text-shadow: none
+          }
+          .dropdown-content a:hover{
+            opacity: 1;
+            color: #e25252;
+          }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* background-color: #e25252; */
+          }
         
 /*SLIDER*/
     .slider img{
@@ -85,7 +128,6 @@ header #logo{
         display: none;
         color: #e25252;
         text-shadow:0 0 15px #ffffff;
-        
     }
 
     fn{
@@ -103,7 +145,6 @@ header #logo{
         background-image: linear-gradient(90deg,#e25252, rgb(241, 106, 72),#e25252) ;
         padding: 0px 0.8em;
         color: #fff;
-        
         height: fit-content;
     }
 
@@ -126,7 +167,6 @@ header #logo{
         color: rgb(45, 45, 45);
         border-left: 1px solid #e25252;
         border-radius: 3px;
-        
     }
     #about p{
     padding: 0 1.3em;
@@ -150,8 +190,140 @@ header #logo{
         border-left: 1px solid #e25252;
         border-radius: 3px;
         margin: 2em 12em;
-        
     }
 
+/*Responsiveness*/
+@media only screen and (max-width: 950px) {
+    
+    #navbar_back{ 
+        margin-right: -2.9em;
+        background-image: url("../images/navBarBackgrnd.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    nav ul li{
+        margin: 0.6em 1.1em 0.2em 0.4em;
+        margin: 0.3em 1em 0.2em 0;
+    }
+    nav li a{
+        color: #fff;
+        margin: 0.2em ;
+            padding: 0.3em ;
+    }
+    .dropdown-content a {
+        padding: 0.2em;
+    }
+}
+/*785px*/
+@media only screen and (max-width: 785px) {
+    body {
+        background-color: rgb(230, 187, 173);
+    }
+    nav{
+        margin-top: -20px;
+    }
 
-  
+    .dropdown-content{
+        top: 8.4em;
+    }
+}
+
+/*600px*/
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #fff;
+    }
+    #logo{
+        width: 15em;
+    }
+    nav{
+        margin-top: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+#navbar_back{
+    margin: 0;
+    background-image: none;
+}
+.hamburgerContainer {
+    display: block;
+    margin-top: -3.5em;
+    cursor: pointer;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+.hamburgerImg{
+    display: block;
+    max-width: 4em;
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+   }
+
+nav ul{
+    display: none;
+    margin: 0;
+    clear: right;
+    padding: 0;
+    flex-direction: column;
+    z-index: 3;
+    background-color: #e25252;
+    }
+
+    nav ul li {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        text-shadow: 0 0 5px #280606;
+        z-index: 4;
+        background-color: #e25252;
+    }
+
+    nav ul li a{
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a:hover {
+        background-color: #fff;
+        border: none;
+        text-decoration: none;
+        color: #e25252;
+        text-shadow: none;
+        z-index: 5;
+    }
+
+    .dropdown-content{
+        display: none;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        z-index: 6;
+        /* right: 11.5em; */
+        padding: 0.2em;
+        font-size: 0.8em;
+        margin: 0 auto;
+        color: #595959;
+        /* border-left: 1px solid #e25252; */
+        background-color: #fff;
+        text-shadow: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+  /* If checked, show the ul with the menu */
+.hamburgerContainer input:checked ~ ul {
+    display: flex;
+}
+
+.hamburgerImg:hover, .hamburgerImg:focus  {
+    opacity: 0.5;
+}
+
+}
