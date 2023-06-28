@@ -8,33 +8,55 @@
     <meta name="keywords" content="international students, intl students, newcomers canada, new students, college canada, college toronto, arrival tips">
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Freshies in Canada</title>
 </head>
 <body>
 <!-- HEADER     -->
     <header>
-        <a href="index.html"><img id="logo" src="images/FreshiesLogoColor_72dpi.png" alt="Freshies in Canada Logo">
+        <a href="index.html"><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
         </a>
     <!-- NAVBAR -->
            <nav>
             <div id="navbar_back">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="">SERVICES <img class="listarrow" src="images/listarrow.png" alt=""> </a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+                <label for="respMenu" class="hamburgerContainer">
+                    <input type="checkbox" id="respMenu">
+                    <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
+                  
+              
+                    <!-- <button type="button" id="hamburgerBtn"><img id="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu"></button> -->
+                    <ul class="menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li class="dropdown">                   
+                                <a class="dropbtn">SERVICES
+                                    <img class="listarrow" src="images/listarrow.png" alt="">
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="#">Documentation</a>
+                                    <a href="#">Accomodation</a>
+                                    <a href="#">Transportation</a>
+                                    <a href="#">Part-time Jobs</a>
+                                    <a href="#">Money Tips</a>
+                                </div>                    
+                        </li>
+                        
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </label>
             </div>
         </nav>
     </header>
 
     <!-- JAVASCRIPT SLIDER -->
-    <div class="slider" >
+
+    <section class="slider" >
         <img src="images/Slider1oleksandr-pidvalnyi-1008155.jpg" alt="Photo of student at airport" title="This will be a slider!!">    
             <div class="tooltip">This will be a Javascript Slider.</div>    
         <fn><em>Photo by Oleksandr Pidvalnyi: https://www.pexels.com/photo/woman-walking-on-pathway-while-strolling-luggage-1008155/</em></fn>
                 
-    </div>
+    </section>
     <main>            
         
         <section id="about">
