@@ -192,6 +192,7 @@ header #logo{
         margin: 2em 12em;
     }
 
+    
 /*Responsiveness*/
 @media only screen and (max-width: 950px) {
     
@@ -255,36 +256,36 @@ header #logo{
         margin: 2em 3em;
     }
 
-#navbar_back{
-    margin: 0;
-    background-image: none;
-}
-.hamburgerContainer {
-    display: block;
-    margin-top: -3.5em;
-    cursor: pointer;
-    text-align: center;
-    z-index: 2;
-    border: 1px solid rgb(255, 255, 255);
-  }
-
-.hamburgerImg{
-    display: block;
-    max-width: 4em;
-    float: right;
-    margin-right: 1em;
-    margin-bottom: 1.5em;
-   }
-
-nav ul{
-    display: none;
-    margin: 0;
-    clear: right;
-    padding: 0;
-    flex-direction: column;
-    z-index: 3;
-    background-color: #e25252;
+    #navbar_back{
+        margin: 0;
+        background-image: none;
     }
+    .hamburgerContainer {
+        display: block;
+        margin-top: -3.5em;
+        cursor: pointer;
+        text-align: center;
+        z-index: 2;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .hamburgerImg{
+        display: block;
+        max-width: 4em;
+        float: right;
+        margin-right: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    nav ul{
+        display: none;
+        margin: 0;
+        clear: right;
+        padding: 0;
+        flex-direction: column;
+        z-index: 3;
+        background-color: #e25252;
+        }
 
     nav ul li {
         color: #fff;
@@ -330,13 +331,13 @@ nav ul{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
 
-  /* If checked, show the ul with the menu */
-.hamburgerContainer input:checked ~ ul {
-    display: flex;
-}
+    /* If checked, show the ul with the menu */
+    .hamburgerContainer input:checked ~ ul {
+        display: flex;
+    }
 
-.hamburgerImg:hover, .hamburgerImg:focus  {
-    opacity: 0.5;
-}
+    .hamburgerImg:hover, .hamburgerImg:focus  {
+        opacity: 0.5;
+    }
 
 }
