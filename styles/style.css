@@ -66,7 +66,7 @@ header #logo{
             display: none;
         }
 
-        nav li a:hover, li a:focus{
+        nav li a:hover{
             border-bottom: 3px solid #fff;
             opacity: 0.5;
         }
@@ -107,13 +107,17 @@ header #logo{
             opacity: 1;
             color: #e25252;
           }
-
+         
         .dropdown:hover .dropdown-content {
             display: block;
             /* background-color: #e25252; */
           }
         
 /*SLIDER*/
+    #slider{
+        margin-top: 0;
+    }
+    
     #slider img{
          width: 100%;
     }
@@ -234,6 +238,9 @@ header #logo{
     .dropdown-content{
         top: 8.4em;
     }
+        #slider{
+        margin-top: 0;
+    }
 }
 
 /*600px*/
@@ -339,9 +346,6 @@ header #logo{
         background-color: #ffb9b9;
         text-shadow: none
       }
-    /* #slider{
-        margin-top: 9em;
-    } */
 
     /* If checked, show the ul with the menu */
     .hamburgerContainer input:checked ~ ul {
