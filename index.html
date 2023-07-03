@@ -25,13 +25,12 @@
                     <input type="checkbox" id="respMenu" onclick="respMenu()">
                     <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
                   
-              
-                    <!-- <button type="button" id="hamburgerBtn"><img id="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu"></button> -->
+                    <!-- hamburguerImg is a checkbox, when checked it changes through CSS the display of the ul.menu to flex. It's display att is hidden until the media query for mobiles displays it -->
                     <ul class="menu">
-                        <li><a href="">HOME</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li class="dropdown">                   
-                                <a class="dropbtn">SERVICES
+                                <a class="dropbtn" href="#">SERVICES
                                     <img class="listarrow" src="images/listarrow.png" alt="">
                                 </a>
                                 <div class="dropdown-content">
@@ -43,7 +42,7 @@
                                 </div>                    
                         </li>
                         
-                        <li><a href="">CONTACT</a></li>
+                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </label>
             </div>
