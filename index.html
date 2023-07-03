@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="index.js" defer></script>
     <title>Freshies in Canada</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
            <nav>
             <div id="navbar_back">
                 <label for="respMenu" class="hamburgerContainer">
-                    <input type="checkbox" id="respMenu">
+                    <input type="checkbox" id="respMenu" onclick="respMenu()">
                     <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
                   
               
@@ -51,7 +52,7 @@
 
     <!-- JAVASCRIPT SLIDER -->
 
-    <section class="slider" >
+    <section id="slider" >
         <img src="images/Slider1oleksandr-pidvalnyi-1008155.jpg" alt="Photo of student at airport" title="This will be a slider!!">    
             <div class="tooltip">This will be a Javascript Slider.</div>    
         <fn><em>Photo by Oleksandr Pidvalnyi: https://www.pexels.com/photo/woman-walking-on-pathway-while-strolling-luggage-1008155/</em></fn>
@@ -71,24 +72,25 @@
             
     </main>
 
-    <section id="services">
-        <div class="sectionheader">
-            <h1>SERVICES</h1>
-            <img src="images/navbar_rightborder.png" alt="">  
-        </div>
-        <H2>Student Part-Time Jobs</H2>
-        <P>Need a part-time Job? We got you! All you gotta do is Fill a form and let us know your preffered area in Toronto 
-            and your job title Don't forget to post your resume as well!! We will send you a list of your prefference via email.</P>
+        <section id="services">
+            <div class="sectionheader">
+                <h1>SERVICES</h1>
+                <img src="images/navbar_rightborder.png" alt="">  
+            </div>
+            <H2>Student Part-Time Jobs</H2>
+            <p>Need a part-time Job? We got you! All you gotta do is Fill a form and let us know your preffered area in Toronto 
+                and your job title Don't forget to post your resume as well!! We will send you a list of your prefference via email.</p>
 
-    <H2>Toronto Rentals</H2>
-    <p>To know the areas that are available for rentals just for toronto areas. Fill the below form and we will send you a list of 
-        preffered rentals via email.  </p>
+        <H2>Toronto Rentals</H2>
+        <p>To know the areas that are available for rentals just for toronto areas. Fill the below form and we will send you a list of 
+            preffered rentals via email.  </p>
 
-    <h2>Transportation</h2>
-    <img class="top" src="images/red.png">
-    <p>SIGN UP FOR PRESTO HERE: <I><a href="https://www.prestocard.ca/en/create-an-account">prestocard1</a></I></p>
-    </section>
+        <h2>Transportation</h2>
+        <img class="top" src="images/red.png">
+        <p>SIGN UP FOR PRESTO HERE: <I><a href="https://www.prestocard.ca/en/create-an-account">prestocard1</a></I></p>
+        </section>
 
+    
 
     
 </body>
