@@ -182,6 +182,11 @@ header #logo{
         color: #595959;
     }
 
+    .team img{
+        margin-left: 300px;
+        width: 350px;
+    }
+
 /*SERVICES*/
     #services{
         margin: auto;
