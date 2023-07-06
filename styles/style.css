@@ -9,10 +9,7 @@ header #logo{
     margin: 0.5em 1em;
 }
 
-
-
 /*NAVBAR*/
-
 @font-face {
     font-family: navbarFont;
     src: url("../fonts/Rubik-Light.ttf") format("truetype");
@@ -33,8 +30,6 @@ header #logo{
             list-style: none;
             margin-left: 0;
             padding: 0.5em 2em;
-            /* background-image: radial-gradient( pink, orange, red);
-            border-bottom: 7px solid rgba(203, 101, 110, 0.85);*/
         }
 
         nav ul li{
@@ -187,7 +182,7 @@ header #logo{
         color: #595959;
     }
 
-    /*Services*/
+/*SERVICES*/
     #services{
         margin: auto;
         color: rgb(45, 45, 45);
@@ -196,8 +191,64 @@ header #logo{
         margin: 2em 12em;
     }
 
+    #services hr{
+    margin: 5px 0;
+    height: 3px;
+    color: #e25252;
+    }
+
+    .rows{
+        margin-left: -50px;
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .col1 img{
+        margin-left: 20px;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .categories{
+        margin: 70px 0;
+        color: #e25252;
+    }
+
+    .col1{
+        flex-basis: 30%;
+        min-width: 250px;
+        padding-left: 50px;
+        margin-bottom: 30px;
+    }
+
+/*FOOTER*/
+    #footer {
+        font-size: 14px;
+        padding:30px 0;
+        background: #e25252;
+        color: #FFE4E1;
+        text-align: center;
+    }
+    .foot p{
+        /* margin-left: 390px; */
+        font-size: 30px;
+    }
+
+    .foot hr{
+        margin: 20px 0;
+        height: 1.5px;
+        color: #FFE4E1;
+    }
+    .foot a{
+        /* margin-left: 550px; */
+        font-size: 20px;
+        color: #fff;
+    }
+
     
-/*Responsiveness*/
+/*RESPONSIVENESS*/
 @media only screen and (max-width: 950px) {
     
     #navbar_back{ 
@@ -348,6 +399,9 @@ header #logo{
         padding: 0.4em 0;
         text-shadow: none
       }
+    /* #slider{
+        margin-top: 9em;
+    } */
 
     /* If checked, show the ul with the menu */
     .hamburgerContainer input:checked ~ ul {
