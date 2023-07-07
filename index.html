@@ -27,21 +27,22 @@
                   
                     <!-- hamburguerImg is a checkbox, when checked it changes through CSS the display of the ul.menu to flex. It's display att is hidden until the media query for mobiles displays it -->
                     <ul class="menu">
-                        <li><a href="index.html">HOME</a></li>
+                        <li><a class="currentPage" href="index.html">HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li class="dropdown">                   
-                                <a class="dropbtn" href="#">SERVICES
+                                <a class="dropbtn" href="services.html">SERVICES
                                     <img class="listarrow" src="images/listarrow.png" alt="">
                                 </a>
                                 <div class="dropdown-content">
-                                    <a href="#">Documentation</a>
-                                    <a href="#">Accomodation</a>
-                                    <a href="#">Transportation</a>
-                                    <a href="#">Part-time Jobs</a>
-                                    <a href="#">Money Tips</a>
+                                    <a href="services.html#documentation">Documentation</a>
+                                    <a href="services.html#accomodation">Accomodation</a>
+                                    <a href="services.html#simCard">SIM Card</a>
+                                    <a href="services.html#transportation">Transportation</a>
+                                    <a href="services.html#partTime">Part-time Jobs</a>
+                                    <a href="services.html#recreation">Recreation</a>
+                                    <a href="services.html#moneyTips">Money Tips</a>
                                 </div>                    
                         </li>
-                        
                         <li><a href="#">CONTACT</a></li>
                     </ul>
                 </label>
@@ -58,7 +59,7 @@
               
     </section>
     <main>            
-        
+       
         <section id="about">
             <div class="sectionheader">
             <h1>ABOUT </h1>
@@ -67,87 +68,26 @@
             <p>We are a group of recent grads, previously international students now advising new international students coming to Canada. Our objective is helping newcomers navigate their educational journey and adjust to life in a new country. <br><br><span>Since we struggled ourselves with issues you might encounter we may be able to offer some aid and tips.</span><br><br>
             Our firsthand experience and knowledge could provide valuable insights and support to make your transition smoother.  </p>
              <div class="team">
-                <img src="images/team.png" alt="A picture of three hands teaming up together"> 
-                <p>Team Alpha that comprises of Roger, Amandeep and Karina have teamed up to build this this website which would be convient for the freshers.
-                    Make sure to have a look at our services.
+                <img src="images/team.png" alt="A pictogram of three hands teaming up together"> 
+                <p>Team Alpha comprises Roger, Amandeep and Karina. We have teamed up to build a website which would be convient for the freshers.
+                    Be sure to take a look at our services.
                 </p> 
             </div> 
         </section>
             
     </main>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="sectionheader">
-            <h1>SERVICES</h1>
-            <img src="images/navbar_rightborder.png" alt="">  
-    </div>
-            <div class="categories">
-                <div class="rows">
-                    <div class="col1">
-                        <h1>CANADIAN SIM</h1>
-                        <hr>
-                        <img src="images/sim.png" alt="A picture of a sim card">
-                        <p style="color: black;"> Get your canadian sim card free of cost delivered at your home.Canada has three main providers 
-                            (Bell, Telus, & Rogers), and a host of smaller resellers, including a few owned by the “big three” themselves. There are 
-                            also a couple of outliers such as Freedom Mobile that have worse coverage and use less common GSM frequencies. While the 
-                            company’s 4G/LTE rollout makes it compatible with a wider range of international phones than in the past, most travelers 
-                            will still be better off looking elsewhere. So while it may appear at first glance that there are many choices at your mobile 
-                            disposal, that’s sadly not the case. Competition is limited between the three companies, with similar, expensive prices across 
-                            the board. Below is the link for the Fido (Powered by Rogers) sim card.</p>
-                        <p>
-                        APPLY NOW BY CLICKING ON THE LINK BELOW!!!</p>
-                        <a href="https://account.fido.ca/">APPLY NOW</a>
-                    </div>
-                    
-                    <div class="col1">
-                        <h1>PART-TIME JOBS</h1>
-                        <hr>
-                        <img src="images/suitcase.png" alt="An animated image of a job bag ">
-                        <p style="color: black;">Don't worry about finding jobs in Toronto. There are plenty of jobs available. The minimum part time job in Canada for students 
-                            salary is 10 CAD per hour. What are the best job in Canada for students? The best job in Canada for students include 
-                            working as a teacher's assistant, tutor, waiter, bartender or server, driver, freelancer, translator, salesperson, 
-                            babysitter, dog walker, etc.</p>
-                            <p style="color: red;"><b>PART-TIME JOB TIPS</b>
-                            <ul style="color: black;">
-                                <li>Time Management</li>
-                                <li>Reliability and Punctuality</li>
-                                <li>Positive Attitude</li>
-                                <li>Customer Service</li>
-                                <li>Communication Skills</li>
-                                <li>Good Work Ethic</li>
-                                <li>Teamwork</li>
-                                <li>Professionalism</li>
-                                <li>Learning Opportunities</li>
-                            </ul></p>
-                        <p>Click the below link to fill the form so that we can get back to you.</p>
-                        <a href="">Fill the form</a> 
-                    </div>
-
-                    <div class="col1">
-                        <h1>TRANSPORTATION</h1>
-                        <hr>
-                        <img src="images/delivery.png" alt="An animated image of a map">
-                        <p style="color: black;"> The Presto card (stylized as PRESTO) is a contactless smart card automated fare collection system 
-                            used on participating public transit systems in the province of Ontario, Canada, specifically in Greater Toronto, Hamilton, 
-                            and Ottawa. Presto card readers were implemented on a trial basis from 25 June 2007 to 30 September 2008. Full implementation 
-                            began in November 2009 and it was rolled out across rapid transit stations, railway stations, bus stops and terminals, 
-                            and transit vehicles on eleven different transit systems.</p>
-                            <p>You can apply for the presto card by clicking on the link given below </p>
-                        <a href="https://www.prestocard.ca/en/create-an-account">Apply for Presto</a>
-                    </div>
-            
-                </div>
-        </div>
-    </section>
 </body>
 
 <!-- FOOTER -->
     <footer id="footer">
     <div class="foot">
-        <p>This Website was created by Team Alpha</p>
+       <a href="#"><img class="icon"  src="images/fbicon.png" alt="Facebook" title="Facebook" ></a> 
+       <a href="#"><img class="icon"  src="images/igicon.png" alt="Instagram" title="Instagram"></a> 
+       <p>This Website was created by Team Alpha &#169; 2023</p>
         <hr>
-        <a href="#navbar_back">Go back to the home page</a>
+
+        <a class="hometopbtn" href="index.html#top"> <img class="icon" src="images/homeicon.png" alt="home button" title="Home top"> Go to home page top</a>
     </div>
     </footer>
 
