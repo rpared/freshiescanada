@@ -289,8 +289,7 @@ header #logo{
         padding: 0;
     }
 
-    .foot .hometop{
-
+    .foot .hometopbtn{
         display:inline-flex;
         align-items: center;
         justify-content: center;
