@@ -516,8 +516,13 @@ header #logo{
     .team img{
         width: 160px;
     }
+    
     .col1 img{
         width: 120px;
+    }
+    
+    .foot p{
+        font-size: 1em;
     }
 
 }
