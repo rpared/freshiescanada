@@ -131,6 +131,12 @@ header #logo{
         margin-top: 0;
     }
 
+    #slider img{
+        height: 450px;
+        object-fit: cover;
+        object-position: 10% 0;
+    }
+
     #slider img, .banner img{
          width: 100%;
     }
@@ -224,7 +230,58 @@ header #logo{
     .categories p, .categories ul{
         color:#444444;
     }
+/*STEPS PRE & POST ARRIVAL*/
+    section.steps{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
 
+    section.steps button{
+        width: 25em;
+        border: 12px solid #ffffff;
+        border-radius: 6px;
+        box-shadow:1px 1px 5px #bdbdbd;
+        background-color: #f6f6f6;
+        margin: 0 1em;
+        cursor: pointer;
+    }
+
+    section.steps button:hover{
+        background-color: #e2525255;
+        box-shadow:1px 1px 8px #2f2f2f;
+    }
+
+    section.steps div.big-number{
+        font-family: rubikMedium;
+        font-size: 6em;
+        margin: 0;
+        color: #7b7b7b;
+    }
+
+    section.steps h3{
+        font-family: rubikMedium;
+        font-size: 1.2em;
+        margin: 0 0 0.6em;
+        color: #444444;
+    }
+
+    section.steps span{
+        color: #e25252;
+        font-size: 120%;
+    }
+
+    section.steps ol li{
+        color: #2f2f2f;
+        padding: 2px 0;
+        text-align: left;
+        list-style: decimal;
+    }
+
+    section.steps ol li::marker{
+        font-weight: bold;
+        color: #e25252;
+    }
     
 /*EXTERNAL LINKS*/
     main a, section a{  
@@ -485,6 +542,10 @@ header #logo{
         margin-top: 9em;
     } */
 
+    #slider img{
+        height: 250px;
+    }
+
     main{
         margin: 2em 2em ;
     }
@@ -513,14 +574,22 @@ header #logo{
         height: 2.8em;
     }
 
+    section.steps{
+        flex-direction: column;
+    }
+
+    section.steps button{
+        margin: 1em auto;
+    }
+
     .team img{
         width: 160px;
     }
-    
+
     .col1 img{
         width: 120px;
     }
-    
+
     .foot p{
         font-size: 1em;
     }
