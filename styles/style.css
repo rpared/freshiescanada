@@ -3,6 +3,14 @@ body{
     font-family: sans-serif;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow:1px 1px 8px #595959;
+    z-index: 10;
+}
+
 header #logo{
     max-width: 250px;
     margin: 0.5em 1em;
@@ -431,6 +439,12 @@ header #logo{
 /*800px*/
 @media only screen and (max-width: 800px) {
 
+    header{
+        position: static;
+        box-shadow:none;
+
+    }
+
     #logo{
         width: 14em;
     }
@@ -451,7 +465,7 @@ header #logo{
         cursor: pointer;
         text-align: center;
         z-index: 2;
-        border: 1px solid rgb(255, 255, 255);
+        /* border: 1px solid rgb(255, 255, 255); */
     }
 
     .hamburgerImg{
