@@ -1,175 +1,611 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prime source of info for international college and university students from landing until settling in Toronto Canada." >
-    <meta name="keywords" content="international students, intl students, newcomers canada, new students, college canada, college toronto, arrival tips">
-    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="services.js" defer></script>
-    <title>Services</title>
-</head>
-<body>
-<!-- HEADER     -->
-    <header>
-        <a href="index.html"><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
-        </a>
-    <!-- NAVBAR -->
-           <nav>
-            <div id="navbar_back">
-                <label for="respMenu" class="hamburgerContainer">
-                    <input type="checkbox" id="respMenu" onclick="respMenu()">
-                    <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
-                  
-                    <!-- hamburguerImg is a checkbox, when checked it changes through CSS the display of the ul.menu to flex. It's display att is hidden until the media query for mobiles displays it -->
-                    <ul class="menu">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="index.html#about">ABOUT</a></li>
-                        <li class="dropdown">                   
-                                <a class="dropbtn currentPage" href="#">SERVICES
-                                    <img class="listarrow" src="images/listarrow.png" alt="">
-                                </a>
-                                <div class="dropdown-content">
-                                    <a href="services.html#documentation">Documentation</a>
-                                    <a href="services.html#accomodation">Accomodation</a>
-                                    <a href="services.html#simCard">SIM Card</a>
-                                    <a href="services.html#transportation">Transportation</a>
-                                    <a href="services.html#partTime">Part-time Jobs</a>
-                                    <a href="services.html#recreation">Recreation</a>
-                                    <a href="services.html#moneyTips">Money Tips</a>
-                                </div>                    
-                        </li>
-                        
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </label>
-            </div>
-        </nav>
-    </header>
 
-    <section class="banner">
-        <img src="images/Torontobanner.jpg" alt="Photo of Toronto city" title="Toronto skyline" >
-    </section>
-    <main>            
+body{
+    font-family: sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow:1px 1px 8px #595959;
+    z-index: 10;
+}
+
+header #logo{
+    max-width: 250px;
+    margin: 0.5em 1em;
+}
+/*FONTS*/
+    @font-face {
+        font-family: rubik;
+        src: url("../fonts/Rubik-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: rubikRegular;
+        src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: rubikMedium;
+        src: url("../fonts/Rubik-Medium.ttf") format("truetype");
+    }
+
+/*NAVBAR*/
+    nav{
+        margin-top: 0.5em;
+        float: right;
+        vertical-align: middle;
+        /* border: 3px solid red; */
+    }
+
+    #navbar_back{
+        max-height: 130px;
+        background-image: url("../images/navBarBackgrnd.png");
+        background-size: cover;
+    }
+
+    nav ul{
+        list-style: none;
+        margin-left: 0;
+        padding: 0.5em 2em;
+    }
+
+    nav ul li{
+        font-family:rubik, sans-serif;
+        margin: 0.3em 1em 0 1em;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+
+    nav li a{
+        color: #fff;
+        margin: 0.2em;
+        padding: 0.3em;
+        /* border: 1px solid #000; */
+        text-decoration: none;
+        text-shadow: 0 0 5px #280606;
+    }
+
+    .listarrow{
+        width: 16px;
+        vertical-align: top;
+        margin-top: 4px;
+        -webkit-filter: drop-shadow(0 0 6px #280606);
+        filter: drop-shadow(0 0 6px #280606);
+    }
+
+    .currentPage{
+        opacity: 0.5;
+        filter: drop-shadow(0 0 5px #7d4700);
+    }
+
+    /*Button for responsive menu, it is a checkbox hidden until 800px media query*/
+    .hamburgerContainer input, .hamburgerImg{
+        display: none;
+    }
+
+    nav li a:hover{
+        border-bottom: 3px solid #fff;
+        opacity: 0.6;
+    }
+
+    nav li a:active{
+        opacity: 0.2;
+    }
+
+    /*DROPDOWN LIST*/
+        .dropdown{
+            cursor: pointer;
+        }
         
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="sectionheader">
-            <h1>SERVICES</h1>
-            <img src="images/navbar_rightborder.png" alt="">  
-        </div>
-            <div class="categories">
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 4.4em;
+            margin-top: 20px;
+            padding: 0.2em;
+            font-size: 0.8em;
+            margin: 0 auto;
+            color: #595959;
+            /* border-left: 1px solid #e25252; */
+            background-color: #fff;
+            text-shadow: none;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 15;
+        }
 
-                <div class="rows">
-                    <div class="col1">
-                        <h2 id="documentation">DOCUMENTATION</h1>
-                        <hr>
-                        <img src="images/docs.png" alt="A pictogram od dicuments">
-                        <p> 
-                        You need these documents to apply for a study permit:
-                        </p>
-                            <ul>
-                                <li>proof of acceptance</li>
-                                <li>proof of identity</li>
-                                <li>proof of financial support</li>
-                            </ul>                              
- 
-                        <p>
-                        You may also need a letter of explanation
-                        an attestation of issuance of your Quebec Acceptance Certificate (CAQ)
-                        a medical exam
-                        a custodian declaration (minors only), or
-                        other documents.
-                        </p>
-                        <p>Once you enter Canada you will receive the <strong>Study Permit</strong> and a <strong>SIN number</strong>. Be sure to check them throughoutly in the airport, and ask any questions regarding them.</p>
-                        <p>
-                        Check your docs in the IRCC website through the link below:
-                        </p>
-                        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html" target="_blank">IRCC Website</a>
-                    </div>
+        .dropdown-content a {
+            text-align: left;
+            color: #595959;
+            display: block;
+            text-align: left;
+            background-color: #fff;
+            text-shadow: none
+        }
 
-                    <div class="col1">
-                        <h2 id="simCard">CANADIAN SIM CARD</h1>
-                        <hr>
-                        <img src="images/sim.png" alt="A picture of a sim card">
-                        <p> Get your canadian sim card free of cost delivered at your home.Canada has three main providers 
-                            (Bell, Telus, & Rogers), and a host of smaller resellers, including a few owned by the “big three” themselves. There are 
-                            also a couple of outliers such as Freedom Mobile that have worse coverage and use less common GSM frequencies. While the 
-                            company’s 4G/LTE rollout makes it compatible with a wider range of international phones than in the past, most travelers 
-                            will still be better off looking elsewhere. So while it may appear at first glance that there are many choices at your mobile 
-                            disposal, that’s sadly not the case. Competition is limited between the three companies, with similar, expensive prices across 
-                            the board. Below is the link for the Fido (Powered by Rogers) sim card.</p>
-                        <p>
-                        Apply now by clicking on the link below!
-                        </p>
-                        <a href="https://account.fido.ca/" target="_blank">Apply Now</a>
-                    </div>
-
-                    <div class="col1">
-                        <h2 id="transportation">TRANSPORTATION</h1>
-                        <hr>
-                        <img src="images/delivery.png" alt="An animated image of a map">
-                        <p> The Presto card (stylized as PRESTO) is a contactless smart card automated fare collection system 
-                            used on participating public transit systems in the province of Ontario, Canada, specifically in Greater Toronto, Hamilton, 
-                            and Ottawa. Presto card readers were implemented on a trial basis from 25 June 2007 to 30 September 2008. Full implementation 
-                            began in November 2009 and it was rolled out across rapid transit stations, railway stations, bus stops and terminals, 
-                            and transit vehicles on eleven different transit systems.</p>
-                            <p>You can apply for the presto card by clicking on the link given below
-                            </p>
-                        <a href="https://www.prestocard.ca/en/create-an-account" target="_blank">Apply for Presto</a>
-
-                    </div>
-
-
-                    <div class="col1">
-                        <h2 id="partTime">PART-TIME JOBS</h1>
-                        <hr>
-                        <img src="images/suitcase.png" alt="An animated image of a job bag ">
-                        <p>Don't worry about finding jobs in Toronto. There are plenty of jobs available. The minimum part time job in Canada for students 
-                            salary is 10 CAD per hour. What are the best job in Canada for students? The best job in Canada for students include 
-                            working as a teacher's assistant, tutor, waiter, bartender or server, driver, freelancer, translator, salesperson, 
-                            babysitter, dog walker, etc.</p>
-                            <p style="color: #e25252;"><b>PART-TIME JOB TIPS</b>
-                            <ul>
-                                <li>Time Management</li>
-                                <li>Reliability and Punctuality</li>
-                                <li>Positive Attitude</li>
-                                <li>Customer Service</li>
-                                <li>Communication Skills</li>
-                                <li>Good Work Ethic</li>
-                                <li>Teamwork</li>
-                                <li>Professionalism</li>
-                                <li>Learning Opportunities</li>
-                            </ul></p>
-                        <p>Click the below link to fill the form so that we can get back to you.</p>
-                        <a href="">Fill the form</a> 
-                    </div>
-
-                    
+        .dropdown-content a:hover{
+            opacity: 1;
+            color: #e25252;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* background-color: #e25252; */
+        }
             
-                </div>
-        </div>
-    </section>
 
-    </main>
-</body>
+/*SLIDERS & BANNERS*/
+    #slider{
+        margin-top: 0;
+    }
 
-<!-- FOOTER -->
-<footer id="footer">
-    <div class="foot">
-       <a href="#" target="_blank"><img class="icon"  src="images/fbicon.png" alt="Facebook" title="Facebook" ></a> 
-       <a href="#" target="_blank"><img class="icon"  src="images/igicon.png" alt="Instagram" title="Instagram"></a> 
-       <p>This Website was created by Team Alpha &#169; 2023</p>
-        <hr>
+    #slider img{
+        height: 450px;
+        object-fit: cover;
+        object-position: 10% 0;
+    }
 
-        <a class="hometopbtn" href="index.html#top"> <img class="icon" src="images/homeicon.png" alt="home button" title="Home top"> Go to home page top</a>
-    </div>
-    </footer>
+    #slider img, .banner img{
+         width: 100%;
+    }
+
+    .banner{
+        filter: grayscale();
+        -webkit-filter: grayscale();
+
+    }
+
+    .banner:hover{
+        filter: none;
+        -webkit-filter: none;
+
+    }
+
+    #slider img:hover + .tooltip{
+        display: block;
+    }
+
+    .tooltip{
+        font-size: 2em;
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        display: none;
+        color: #e25252;
+        text-shadow:0 0 15px #ffffff;
+    }
+
+    fn{
+        font-size: 0.6em;
+        color: rgb(142, 142, 142);
+        margin-left: 1em;
+    }
+
+/*BODY & MAIN - Titles, headings, paragraphs*/
+    main{
+        margin: 2em 12em;
+    }
+
+    .sectionheader{
+        background-image: linear-gradient(90deg,#e25252, rgb(241, 106, 72),#e25252) ;
+        padding: 0px 0.8em;
+        color: #fff;
+        height: fit-content;
+    }
+
+    .sectionheader img{
+        float: right;
+        margin: -6px;
+        padding: 0;
+        display: inline;
+        height: 3.1em;
+    }
+
+    h1{
+        font-family: rubik, sans-serif;
+        display: inline;
+    }
+
+    h2{
+        font-family: rubikRegular, sans-serif;
+        font-size: 1.8em;
+        margin: 1.5em 0 0 0;
+        text-shadow:2px 2px 5px #c5c5c5;
+    }
+
+    .col1{
+        min-width: 250px;
+        padding-left: 50px;
+        margin-bottom: 30px;
+    }
+
+    .rows{
+        max-width: 1080px;
+        margin: auto;
+        padding-right: 25px;
+    }
+
+    .col1 img{
+        width: 200px;
+        padding: 1.2em;
+    }
+
+    .categories{
+        margin: 20px 0;
+        color: #e25252;
+    }
+
+    .categories p, .categories ul{
+        color:#444444;
+    }
+/*STEPS PRE & POST ARRIVAL*/
+    section.steps{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    section.steps button{
+        width: 25em;
+        border: 12px solid #ffffff;
+        border-radius: 6px;
+        box-shadow:1px 1px 5px #bdbdbd;
+        background-color: #f6f6f6;
+        margin: 0 1em;
+        cursor: pointer;
+    }
+
+    section.steps button:hover{
+        background-color: #e2525255;
+        box-shadow:1px 1px 8px #2f2f2f;
+    }
+
+    section.steps div.big-number{
+        font-family: rubikMedium;
+        font-size: 6em;
+        margin: 0;
+        color: #7b7b7b;
+    }
+
+    section.steps h3{
+        font-family: rubikMedium;
+        font-size: 1.2em;
+        margin: 0 0 0.6em;
+        color: #444444;
+    }
+
+    section.steps span{
+        color: #e25252;
+        font-size: 120%;
+    }
+
+    section.steps ol li{
+        color: #2f2f2f;
+        padding: 2px 0;
+        text-align: left;
+        list-style: decimal;
+    }
+
+    section.steps ol li::marker{
+        font-weight: bold;
+        color: #e25252;
+    }
+    
+/*EXTERNAL LINKS*/
+    main a, section a{  
+        margin-top: 0.8em;
+        margin-left: 1.3em;
+        padding: 0.4em;
+        text-decoration: none;
+        font-family: rubikMedium;
+        color: rgb(88, 88, 88);
+        background-color:#eeeeee;
+        border-radius: 4px;
+        border: 2px solid rgb(177, 177, 177);
+        box-shadow: 1px 1px 3px #b5b5b5;
+    }
+
+    main a:hover, section a:hover{  
+        background-color: #e25252;
+        color: #fff;
+    }
+
+/*ABOUT*/
+    #about{
+        margin: auto;
+        color: rgb(45, 45, 45);
+        border-left: 1px solid #e25252;
+        border-radius: 3px;
+    }
+
+    #about p, #services p{
+        padding: 0 1.3em;
+    }
+
+    #about p::first-letter{
+        font-size: 1.4em;
+    }
+
+    #about span{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.2em;
+        color: #595959;
+    }
+
+    .team img{
+        padding: 1.2em;
+        width: 300px;
+    }
+
+/*SERVICES*/
+    #services{
+        margin: auto;
+        color: rgb(45, 45, 45);
+        border-left: 1px solid #e25252;
+        border-radius: 3px;  
+    }
+
+    #services hr{
+        margin: 5px 0;
+        height: 3px;
+        color: #e25252;
+    }
+
+
+/*FOOTER*/
+    #footer {
+        font-size: 14px;
+        padding: 1.5em 0;
+        background: #e25252;
+        color: #FFE4E1;
+        text-align: center;
+    }
+    .foot p{
+        /* margin-left: 390px; */
+        margin: 0.2em 0;
+        font-size: 20px;
+    }
+    .foot hr{
+        margin: 15px 0;
+        height: 1.5px;
+        color: #FFE4E1;
+    }
+    .foot a{
+        /* margin-left: 550px; */
+        margin: 0;
+        font-size: 16px;
+        color:#fff;
+        text-decoration: none;
+    }
+    .foot a:hover{
+        opacity: 0.5;
+    }
+    .foot .icon{
+        width: 2.6em;
+        margin: 0 0.3em;
+        padding: 0;
+    }
+    .foot .hometopbtn{
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     
-</body>
-</html>
+/*RESPONSIVENESS*/
+/*950px*/
+@media only screen and (max-width: 950px) {
+    #logo{
+        width: 15em;
+    }
+
+    #navbar_back{ 
+        margin-right: -2.9em;
+        background-image: url("../images/navBarBackgrnd.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    nav ul li{
+        margin: 0.6em 1.1em 0.2em 0.4em;
+        margin: 0.3em 1em 0.2em 0;
+    }
+
+    nav li a{
+        color: #fff;
+        margin: 0.2em ;
+            padding: 0.3em ;
+    }
+
+    .dropdown-content a {
+        padding: 0.2em;
+    }
+
+    main{
+        margin: 2em 6em;
+    }
+
+    .team img{
+        width: 200px;
+    }
+
+    .col1 img{
+        width: 180px;
+    }
+
+}
+/*800px*/
+@media only screen and (max-width: 800px) {
+
+    header{
+        position: static;
+        box-shadow:none;
+
+    }
+
+    #logo{
+        width: 14em;
+    }
+
+    nav{
+        margin-top: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #navbar_back{
+        margin: 0;
+        background-image: none;
+    }
+    .hamburgerContainer {
+        display: block;
+        margin-top: -3.5em;
+        cursor: pointer;
+        text-align: center;
+        z-index: 2;
+        /* border: 1px solid rgb(255, 255, 255); */
+    }
+
+    .hamburgerImg{
+        display: block;
+        max-width: 4em;
+        float: right;
+        margin-right: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    nav ul{
+        display: none;
+        margin: 0;
+        clear: right;
+        padding: 0;
+        flex-direction: column;
+        z-index: 3;
+        /* background-color: #e25252; */
+        }
+
+    nav ul li {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        text-shadow: 0 0 5px #280606;
+        z-index: 4;
+        background-color: #e25252;
+    }
+
+    nav ul li a{
+        display: block;
+        margin: 0;
+        padding: 0.4em 0;
+    }
+
+    nav ul li a:hover {
+        background-color: #fff;
+        border: none;
+        text-decoration: none;
+        color: #e25252;
+        text-shadow: none;
+        z-index: 5;
+    }
+
+    .dropdown-content{
+        display: none;
+        width: 100%;
+        position: relative;
+        top: 5px;
+        text-align: center;
+        z-index: 6;
+        /* right: 11.5em; */
+        padding: 0.2em;
+        font-size: 0.8em;
+        margin: 0 auto;
+        color: #595959;
+        /* border-left: 1px solid #e25252; */
+        background-color: #fff;
+        text-shadow: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        text-align: center;
+        color: #595959;
+        display: block;
+        background-color: #ffb9b9;
+        padding: 0.4em 0;
+        text-shadow: none
+      }
+    
+    /* If checked, show the ul with the menu */
+    .hamburgerContainer input:checked ~ ul {
+        display: flex;
+        margin-bottom: 9em;
+    }
+
+    .hamburgerImg:hover  {
+        opacity: 0.5;
+    }
+
+    /*The slider margin doesn't work, don't know why??????? > javascript solves it for the timebeing
+    /* #slider{
+        margin-top: 9em;
+    } */
+
+    #slider img{
+        height: 250px;
+    }
+
+    main{
+        margin: 2em 2em ;
+    }
+
+    .categories{
+        margin: 0;
+    }
+
+    .col1{
+        padding-left: 20px;
+    }
+
+    .rows{
+        padding-right: 0;
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    .sectionheader img{
+        height: 2.8em;
+    }
+
+    section.steps{
+        flex-direction: column;
+    }
+
+    section.steps button{
+        margin: 1em auto;
+    }
+
+    .team img{
+        width: 160px;
+    }
+
+    .col1 img{
+        width: 120px;
+    }
+
+    .foot p{
+        font-size: 1em;
+    }
+
+}
