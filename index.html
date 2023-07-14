@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prime source of info for international college and university students from landing until settling in Toronto Canada." >
-    <meta name="keywords" content="international students, intl students, newcomers canada, new students, college canada, college toronto, arrival tips">
+    <meta name="description" content="Prime source of info for international college and university students from landing until settling in Toronto Canada." >    <meta name="keywords" content="international students, intl students, newcomers canada, new students, college canada, college toronto, arrival tips">
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -16,7 +15,7 @@
 <body>
 <!-- HEADER     -->
     <header>
-        <a><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
+        <a href="index.html"><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
         </a>
     <!-- NAVBAR -->
            <nav>
@@ -35,12 +34,12 @@
                                 </a>
                                 <div class="dropdown-content">
                                     <a href="documentation.html">Documentation</a>
-                                    <a href="accomodation.html">Accomodation</a>
-                                    <a href="simCard.html">SIM Card</a>
-                                    <a href="transportation.html">Transportation</a>
-                                    <a href="partTime.html">Part-time Jobs</a>
-                                    <a href="recreation.html">Recreation</a>
-                                    <a href="moneyTips.html">Money Tips</a>
+                                    <a href="services.html#accomodation">Accomodation</a>
+                                    <a href="services.html#simCard">SIM Card</a>
+                                    <a href="services.html#transportation">Transportation</a>
+                                    <a href="services.html#partTime">Part-time Jobs</a>
+                                    <a href="services.html#recreation">Recreation</a>
+                                    <a href="services.html#moneyTips">Money Tips</a>
                                 </div>                    
                         </li>
                         <li><a href="#">CONTACT</a></li>
@@ -53,27 +52,26 @@
     <!-- JAVASCRIPT SLIDER -->
 
     <section id="slider" >
-        <img src="images/Slider1oleksandr-pidvalnyi-1008155.jpg" alt="Photo of student at airport" title="This will be a slider!!">    
+        <div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Check the <span>Steps</span> before and after landing!</p></div>
+         
+        <img class="background" src="images/Slider1oleksandr-pidvalnyi-1008155.jpg" alt="Photo of student at airport" title="This will be a slider!!">    
             <div class="tooltip">This will be a Javascript Slider.</div>    
-              
+            
     </section>
 
+    <section class="steps" class="anchor" type="button">
+        <button id="Steps-btn1" onclick="getStepsPre()">
+        <div class="big-number">1</div>
+        <h3>Steps <span>PRE</span> arrival</h3>
+        </button>
 
-
+        <button id="Steps-btn2" onclick="getStepsPost()" type="button">
+            <div class="big-number">2</div>
+            <h3>Steps <span>POST</span> arrival</h3>
+        </button>
+    </section>
     <main>
-        <section class="steps" type="button">
-            <button id="Steps-btn1" onclick="getStepsPre()">
-            <div class="big-number">1</div>
-            <h3>Steps <span>PRE</span> arrival</h3>
-            </button>
-
-            <button id="Steps-btn2" onclick="getStepsPost()" type="button">
-                <div class="big-number">2</div>
-                <h3>Steps <span>POST</span> arrival</h3>
-            </button>
-        </section>
-
-        <section id="about">
+        <section id="about" class="anchor">
             <div class="sectionheader">
                 <h1>ABOUT </h1>
                 <img src="images/navbar_rightborder.png" alt="">  
