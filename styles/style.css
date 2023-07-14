@@ -137,12 +137,48 @@ header #logo{
 /*SLIDERS & BANNERS*/
     #slider{
         margin-top: 0;
+        height: 450px;
+        position: relative;
     }
 
-    #slider img{
+    #slider img.background{
         height: 450px;
         object-fit: cover;
         object-position: 10% 0;
+        
+    }
+    .slidertext1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-top: 5px solid #ffffff80;
+        border-bottom: 5px solid #ffffff80;
+        border-left: 5px solid #ffffff80;
+        padding: 1em 0 1em 1em;
+        position: absolute;
+        top: 22%;
+        right: 0%;
+    }
+    .arrow{
+        max-width: 200px;
+        opacity: 0.7;
+    }
+    .slidertext1 p{
+        font-family: rubikMedium;
+        max-width: 200px;
+        margin-left: 1em;
+        text-align: left;
+        font-weight: 600;
+        font-style: oblique;
+        font-size: 1.5em;
+        color: #4f4f4f;
+        padding: 0.5em 5em 0.5em 1em;
+        background-color: #ffffffeb;
+        text-shadow: 1px 1px 6px #ffffff;
+    }
+    .slidertext1 p span{
+        color: #000;
+        font-size: 1.1em;
     }
 
     #slider img, .banner img{
@@ -185,7 +221,10 @@ header #logo{
     main{
         margin: 2em 12em;
     }
-
+    /*This class solves the sticky header from blocking anchored content*/
+    .anchor {
+        scroll-margin-top: 6rem;
+    }
     .sectionheader{
         background-image: linear-gradient(90deg,#e25252, rgb(241, 106, 72),#e25252) ;
         padding: 0px 0.8em;
@@ -240,9 +279,10 @@ header #logo{
     }
 /*STEPS PRE & POST ARRIVAL*/
     section.steps{
+        margin-top: 2em;
         display: flex;
         justify-content: center;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
     }
 
     section.steps button{
@@ -556,9 +596,33 @@ header #logo{
         margin-top: 9em;
     } */
 
-    #slider img{
+
+    #slider{
+        margin-top: 0;
         height: 250px;
+        position: relative;
     }
+
+    #slider img{
+        max-height: 250px;
+    }
+
+    .slidertext1 {
+        border: none;
+        padding: 0.5em 0 0.5em 0.5em;
+        top: 11%;
+    }
+    .arrow{
+        object-fit: contain;
+        max-width: 20%;
+    }
+    .slidertext1 p{
+        font-size: 1.3em;
+        padding-right: 1em;
+        margin-right: 0;
+
+    }
+
 
     main{
         margin: 2em 2em ;
@@ -589,6 +653,7 @@ header #logo{
     }
 
     section.steps{
+        margin-top: 0;
         flex-direction: column;
     }
 
