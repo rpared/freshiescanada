@@ -392,6 +392,31 @@ header #logo{
         color: #e25252;
     }
 
+/*RECREATION*/
+ul.recreation li{
+    line-height: 30px;
+}
+ul.recreation li a {
+    margin-top: 2em;
+    margin-left: 1.3em;
+    padding: 0;
+    text-decoration: none;
+    font-family: rubikMedium;
+    color: rgb(88, 88, 88);
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+}
+ul.recreation li a:hover {
+    margin-top: 2em;
+    margin-left: 1.3em;
+    padding: 0;
+    text-decoration: none;
+    font-family: rubikMedium;
+    color:#e25252;
+
+}   
 
 /*FOOTER*/
     #footer {
@@ -482,7 +507,6 @@ header #logo{
     header{
         position: static;
         box-shadow:none;
-
     }
 
     #logo{
@@ -598,9 +622,7 @@ header #logo{
 
 
     #slider{
-        margin-top: 0;
         height: 250px;
-        position: relative;
     }
 
     #slider img{
@@ -610,7 +632,8 @@ header #logo{
     .slidertext1 {
         border: none;
         padding: 0.5em 0 0.5em 0.5em;
-        top: 11%;
+        position: absolute;
+        top: 17%;
     }
     .arrow{
         object-fit: contain;

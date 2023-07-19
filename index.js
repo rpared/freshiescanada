@@ -1,3 +1,4 @@
+// Nav Bar
 let navMenu = false; 
 // Function to change the slider margin on click
 function respMenu(){
@@ -27,7 +28,7 @@ function sliderPosition(x) {
   x.addListener(sliderPosition) // Attach listener function on state changes
 
 
-  // Steps pre Arrival
+// Steps pre Arrival
   let stepsPreDisplay = false;
   let stepsPreTitle = document.getElementById("Steps-btn1").innerHTML;
   let stepsPre = "<ol><li>English Proficiency Exam</li><li>College Letter of Acceptance</li> <li>Digital Study permit</li><li>Get Flight Tickets</li><li>Reserve Accommodation</li><li>Prepare Luggage</li></ol>";
@@ -58,3 +59,19 @@ function sliderPosition(x) {
     stepsPostDisplay = false;
     }
   }
+
+//Home Slider
+
+
+  //Slider Variables:
+  let slider1 = `<div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Check the <span>Steps</span> before and after landing!</p></div>     
+  <img class="background" src="images/Slider1-steps.jpg" alt="Photo of student at airport">    
+  </div>`;
+
+  let slider2 = `<div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Review the <span>Documents</span> you need!</p></div>
+  <img class="background" src="images/Slider2-documents.jpg" alt="Photo of documents">    
+  </div>`;
+
+  let slider3 = `<div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Handle <span>Transportation</span> like a pro commuter!</p></div>
+  <img class="background" src="images/Slider3-transportation.jpg" alt="Photo of Toronto Street Car">    
+  </div>`;
