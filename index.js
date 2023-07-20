@@ -47,7 +47,7 @@ function sliderPosition(x) {
    // Steps post Arrival
    let stepsPostDisplay = false;
    let stepsPostTitle = document.getElementById("Steps-btn2").innerHTML;
-   let stepsPost = "<ol><li>Retrieve Physical Study Permit</li> <li>Get SIN number</li><li>Get Canadian Sim Card</li><li>Open bank Account</li><li>Get TTC Presto Card</li><li>Long Term Accommodation</li</ol>";
+   let stepsPost = "<ol><li>Retrieve Physical Study Permit</li> <li>Get SIN Number</li><li>Get Canadian Sim Card</li><li>Open Bank Account</li><li>Get TTC Presto Card</li><li>Long Term Accommodation</li</ol>";
 
   function getStepsPost(){
     if (stepsPostDisplay == false){
