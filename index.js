@@ -31,7 +31,7 @@ function sliderPosition(x) {
 // Steps pre Arrival
   let stepsPreDisplay = false;
   let stepsPreTitle = document.getElementById("Steps-btn1").innerHTML;
-  let stepsPre = "<ol><li>English Proficiency Exam</li><li>College Letter of Acceptance</li> <li>Digital Study permit</li><li>Get Flight Tickets</li><li>Reserve Accommodation</li><li>Prepare Luggage</li></ol>";
+  let stepsPre = "<ol><li>English Proficiency Exam</li><li>College Letter of Acceptance</li> <li>Digital Study Permit</li><li>Get Flight Tickets</li><li>Reserve Accommodation</li><li>Prepare Luggage</li></ol>";
 
   function getStepsPre(){
     if (stepsPreDisplay == false){
@@ -47,7 +47,7 @@ function sliderPosition(x) {
    // Steps post Arrival
    let stepsPostDisplay = false;
    let stepsPostTitle = document.getElementById("Steps-btn2").innerHTML;
-   let stepsPost = "<ol><li>Retrieve physical Study Permit</li> <li>Get SIN number</li><li>Get canadian Sim Card</li><li>Open bank Account</li><li>Get TTC Presto card</li><li>Long Term Accommodation</li</ol>";
+   let stepsPost = "<ol><li>Retrieve Physical Study Permit</li> <li>Get SIN number</li><li>Get Canadian Sim Card</li><li>Open bank Account</li><li>Get TTC Presto Card</li><li>Long Term Accommodation</li</ol>";
 
   function getStepsPost(){
     if (stepsPostDisplay == false){
@@ -75,3 +75,11 @@ function sliderPosition(x) {
   let slider3 = `<div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Handle <span>Transportation</span> like a pro commuter!</p></div>
   <img class="background" src="images/Slider3-transportation.jpg" alt="Photo of Toronto Street Car">    
   </div>`;
+
+
+  function respMenuJs(){
+    console.log("hamburger function triggered");
+    document.querySelector(".menu").style.display = "flex";
+    document.querySelector("#menu").style.position = "relative";
+
+  }
