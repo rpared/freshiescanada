@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prime source of info for international college and university students from landing until settling in Toronto Canada." >    <meta name="keywords" content="international students, intl students, newcomers canada, new students, college canada, college toronto, arrival tips">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="indextest.js" defer></script>
+    <title>Freshies in Canada</title>
+</head>
+<body>
+<!-- HEADER     -->
+    <header>
+        <a><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
+        </a>
+    <!-- NAVBAR -->
+           <nav>
+            <button id="btnHamburger" type="button"onclick="respMenu1()">
+                <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
+            </button>
+            <div id="navbar_back">
+                    <ul class="menu">
+                        <li><a class="currentPage" href="index.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li class="dropdown">                   
+                                <a class="dropbtn" href="services.html">SERVICES
+                                    <img class="listarrow" src="images/listarrow.png" alt="">
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="documentation.html">Documentation</a>
+                                    <a href="services.html#accomodation">Accomodation</a>
+                                    <a href="services.html#simCard">SIM Card</a>
+                                    <a href="transportation.html">Transportation</a>
+                                    <a href="services.html#partTime">Part-time Jobs</a>
+                                    <a href="recreation.html">Recreation</a>
+                                    <a href="services.html#moneyTips">Money Tips</a>
+                                </div>                    
+                        </li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                <!-- </label> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- JAVASCRIPT SLIDER -->
+
+    <div class="slider">
+        <div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Check the <span>Steps</span> before and after landing!</p></div>
+        <img class="background" src="images/Slider1-steps.jpg" alt="Photo of student at airport" title="This will be a slider!!">    
+            
+    </div>
+
+    <!-- STEPS PRE AND POST ARRIVAL -->
+    <section class="steps" class="anchor" type="button">
+        <button id="Steps-btn1" onclick="getStepsPre()">
+          <div class="big-number">1</div>
+          <h3>Steps <span>PRE</span> arrival</h3>
+        </button>
+
+        <button id="Steps-btn2" onclick="getStepsPost()" type="button">
+           <div class="big-number">2</div>
+           <h3>Steps <span>POST</span> arrival</h3>
+        </button>
+    </section>
+    
+        <!-- MAIN - ABOUT -->
+    <main>
+        <section id="about" class="anchor">
+            <div class="sectionheader">
+                <h1>ABOUT </h1>
+                <img src="images/navbar_rightborder.png" alt="">  
+            </div>
+            <div class="rows">
+                <div class="col1">
+                        <p>We are a group of recent grads, previously international students now advising new international students coming to Canada. Our objective is helping newcomers navigate their educational journey and adjust to life in a new country. <br><br><span>Since we struggled ourselves with issues you might encounter we may be able to offer some aid and tips.</span><br><br>
+                        Our firsthand experience and knowledge could provide valuable insights and support to make your transition smoother.  </p>
+                        <div class="team">
+                            <img src="images/team.png" alt="A pictogram of three hands teaming up together"> 
+                            <p>Team Alpha comprises Roger, Amandeep and Karina. We have teamed up to build a website which would be convient for the freshers.
+                            Be sure to take a look at our services.
+                            </p> 
+                        </div>
+                </div>
+            </div>
+                
+        </section>
+            
+    </main>
+
+</body>
+
+<!-- FOOTER -->
+    <footer id="footer">
+    <div class="foot">
+       <a href="#"><img class="icon"  src="images/fbicon.png" alt="Facebook" title="Facebook" ></a> 
+       <a href="#"><img class="icon"  src="images/igicon.png" alt="Instagram" title="Instagram"></a> 
+       <p>This Website was created by Team Alpha &#169; 2023</p>
+        <hr>
+
+        <a class="hometopbtn" href="index.html#top"> <img class="icon" src="images/homeicon.png" alt="home button" title="Home top"> Go to home page top</a>
+    </div>
+    </footer>
+
+    
+</body>
+</html>
