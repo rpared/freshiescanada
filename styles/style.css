@@ -1,4 +1,3 @@
-
 body{
     font-family: sans-serif;
 }
@@ -43,10 +42,12 @@ header #logo{
         background-size: cover;
     }
 
-    nav ul{
+    .menu{
+        display: block;
         list-style: none;
         margin-left: 0;
         padding: 0.5em 2em;
+        z-index: 10;
     }
 
     nav ul li{
@@ -79,8 +80,8 @@ header #logo{
         filter: drop-shadow(0 0 5px #7d4700);
     }
 
-    /*Button for responsive menu, it is a checkbox hidden until 800px media query*/
-    .hamburgerContainer input, .hamburgerImg{
+    /*Button for responsive menu, it is hidden until 800px media query*/
+    #btnHamburger, .hamburgerImg{
         display: none;
     }
 
@@ -133,31 +134,36 @@ header #logo{
             /* background-color: #e25252; */
         }
             
-
+    
 /*SLIDERS & BANNERS*/
-    #slider{
+    .slider{
         margin-top: 0;
-        height: 450px;
         position: relative;
+        height: 450px;
+        /* border: 1px solid blue; */
+        padding: 0;
     }
 
-    #slider img.background{
+    .background{
         height: 450px;
+        width: 100%;
         object-fit: cover;
-        object-position: 10% 0;
+        object-position: 10% 10%;
         
     }
     .slidertext1 {
+        position: absolute;
+        top: 20%;
+        right: 0;
+        margin: 0;
+        padding: 1em 0 1em 1em;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         border-top: 5px solid #ffffff80;
         border-bottom: 5px solid #ffffff80;
         border-left: 5px solid #ffffff80;
-        padding: 1em 0 1em 1em;
-        position: absolute;
-        top: 22%;
-        right: 0%;
+        z-index: 1;
     }
     .arrow{
         max-width: 200px;
@@ -181,14 +187,13 @@ header #logo{
         font-size: 1.1em;
     }
 
-    #slider img, .banner img{
+    .banner img{
          width: 100%;
     }
 
     .banner{
         filter: grayscale();
         -webkit-filter: grayscale();
-
     }
 
     .banner:hover{
@@ -197,25 +202,8 @@ header #logo{
 
     }
 
-    #slider img:hover + .tooltip{
-        display: block;
-    }
 
-    .tooltip{
-        font-size: 2em;
-        position: absolute;
-        top: 200px;
-        left: 50px;
-        display: none;
-        color: #e25252;
-        text-shadow:0 0 15px #ffffff;
-    }
 
-    fn{
-        font-size: 0.6em;
-        color: rgb(142, 142, 142);
-        margin-left: 1em;
-    }
 
 /*BODY & MAIN - Titles, headings, paragraphs*/
     main{
@@ -270,7 +258,7 @@ header #logo{
     }
 
     .categories{
-        margin: 70px 0;
+        margin: 20px 0;
         color: #e25252;
     }
 
@@ -278,14 +266,14 @@ header #logo{
         color:#444444;
     }
 /*STEPS PRE & POST ARRIVAL*/
-    section.steps{
-        margin-top: 2em;
+    .steps{
+        margin-top: 30px;
         display: flex;
         justify-content: center;
         margin-bottom: 3em;
     }
 
-    section.steps button{
+    .steps button{
         width: 25em;
         border: 12px solid #ffffff;
         border-radius: 6px;
@@ -295,38 +283,38 @@ header #logo{
         cursor: pointer;
     }
 
-    section.steps button:hover{
+    .steps button:hover{
         background-color: #e2525255;
         box-shadow:1px 1px 8px #2f2f2f;
     }
 
-    section.steps div.big-number{
+    .steps div.big-number{
         font-family: rubikMedium;
         font-size: 6em;
         margin: 0;
         color: #7b7b7b;
     }
 
-    section.steps h3{
+    .steps h3{
         font-family: rubikMedium;
         font-size: 1.2em;
         margin: 0 0 0.6em;
         color: #444444;
     }
 
-    section.steps span{
+    .steps span{
         color: #e25252;
         font-size: 120%;
     }
 
-    section.steps ol li{
+    .steps ol li{
         color: #2f2f2f;
         padding: 2px 0;
         text-align: left;
         list-style: decimal;
     }
 
-    section.steps ol li::marker{
+    .steps ol li::marker{
         font-weight: bold;
         color: #e25252;
     }
@@ -339,7 +327,7 @@ header #logo{
         text-decoration: none;
         font-family: rubikMedium;
         color: rgb(88, 88, 88);
-        background-color:#eeeeee;
+        background-color:#fff;
         border-radius: 4px;
         border: 2px solid rgb(177, 177, 177);
         box-shadow: 1px 1px 3px #b5b5b5;
@@ -473,19 +461,27 @@ ul.recreation li a:hover {
         background-position: center;
     }
 
+    .menu{
+        display: block;
+    }
+    
     nav ul li{
-        margin: 0.6em 1.1em 0.2em 0.4em;
+        /* margin: 0.6em 1.1em 0.2em 0.4em; */
         margin: 0.3em 1em 0.2em 0;
     }
 
     nav li a{
         color: #fff;
         margin: 0.2em ;
-            padding: 0.3em ;
+        padding: 0.3em ;
     }
 
     .dropdown-content a {
-        padding: 0.2em;
+        padding: 0.3em;
+    }
+
+    .background{
+        position: absolute;
     }
 
     main{
@@ -516,38 +512,42 @@ ul.recreation li a:hover {
     nav{
         margin-top: 0px;
         width: 100%;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     #navbar_back{
+        max-height: none;
         margin: 0;
         background-image: none;
-    }
-    .hamburgerContainer {
-        display: block;
-        margin-top: -3.5em;
-        cursor: pointer;
-        text-align: center;
-        z-index: 2;
-        /* border: 1px solid rgb(255, 255, 255); */
+        background-size: none;
+        background-repeat: none;
+        background-position: none;
+
     }
 
+    #btnHamburger{
+        float: right;
+        margin-top: -55px;
+        display: block;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
     .hamburgerImg{
         display: block;
         max-width: 4em;
-        float: right;
         margin-right: 1em;
         margin-bottom: 1.5em;
     }
 
-    nav ul{
+    .menu{
         display: none;
         margin: 0;
         clear: right;
         padding: 0;
+        text-align: center;
         flex-direction: column;
-        z-index: 3;
-        /* background-color: #e25252; */
         }
 
     nav ul li {
@@ -559,7 +559,7 @@ ul.recreation li a:hover {
         border: 1px solid #ffffff;
         text-decoration: none;
         text-shadow: 0 0 5px #280606;
-        z-index: 4;
+        z-index: 2;
         background-color: #e25252;
     }
 
@@ -575,7 +575,6 @@ ul.recreation li a:hover {
         text-decoration: none;
         color: #e25252;
         text-shadow: none;
-        z-index: 5;
     }
 
     .dropdown-content{
@@ -584,8 +583,7 @@ ul.recreation li a:hover {
         position: relative;
         top: 5px;
         text-align: center;
-        z-index: 6;
-        /* right: 11.5em; */
+        z-index: 3;
         padding: 0.2em;
         font-size: 0.8em;
         margin: 0 auto;
@@ -605,35 +603,24 @@ ul.recreation li a:hover {
         text-shadow: none
       }
     
-    /* If checked, show the ul with the menu */
-    .hamburgerContainer input:checked ~ ul {
-        display: flex;
-        margin-bottom: 9em;
-    }
-
     .hamburgerImg:hover  {
         opacity: 0.5;
     }
 
-    /*The slider margin doesn't work, don't know why??????? > javascript solves it for the timebeing
-    /* #slider{
-        margin-top: 9em;
-    } */
-
-
-    #slider{
+    .slider{
         height: 250px;
+        
     }
 
-    #slider img{
-        max-height: 250px;
+    .background{
+        height: 250px;
+        margin: 0;
+        position: absolute;
     }
 
     .slidertext1 {
         border: none;
         padding: 0.5em 0 0.5em 0.5em;
-        position: absolute;
-        top: 17%;
     }
     .arrow{
         object-fit: contain;
@@ -643,7 +630,6 @@ ul.recreation li a:hover {
         font-size: 1.3em;
         padding-right: 1em;
         margin-right: 0;
-
     }
 
 
@@ -676,7 +662,7 @@ ul.recreation li a:hover {
     }
 
     section.steps{
-        margin-top: 0;
+        margin-top: 10px;
         flex-direction: column;
     }
 
