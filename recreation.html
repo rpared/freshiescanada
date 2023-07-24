@@ -20,12 +20,10 @@
         </a>
     <!-- NAVBAR -->
            <nav>
+            <button id="btnHamburger" type="button"onclick="respMenu()">
+                <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
+            </button>
             <div id="navbar_back">
-                <label for="respMenu" class="hamburgerContainer" onclick="respMenu()">
-                    <input type="checkbox" id="respMenu" onclick="respMenu()">
-                    <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
-                  
-                    <!-- hamburguerImg is a checkbox, when checked it changes through CSS the display of the ul.menu to flex. It's display att is hidden until the media query for mobiles displays it -->
                     <ul class="menu">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="index.html#about">ABOUT</a></li>
@@ -43,10 +41,8 @@
                                     <a href="services.html#moneyTips">Money Tips</a>
                                 </div>                    
                         </li>
-                        
                         <li><a href="#">CONTACT</a></li>
                     </ul>
-                </label>
             </div>
         </nav>
     </header>
