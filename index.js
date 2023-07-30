@@ -118,7 +118,7 @@ let slider3 = `
     <img class="background" src="images/Slider3-transportation.jpg" alt="Photo of Toronto Street Car">
     </a>`;
 
-myInterval = setInterval(setSlider, 4500);
+myInterval = setInterval(setSlider, 4000);
 let slider = document.querySelector(".slider");
 slider.innerHTML = slider1;
  

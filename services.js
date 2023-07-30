@@ -45,3 +45,18 @@ if (x1 <= window.matchMedia("(width: 799px)") ){
   x1.addListener(screenWidth2); // Attach listener function on state changes
   // myInterval = setInterval(setSlider, 4500);
 }
+
+
+// Function for the popup form
+function showPopup() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
+document.getElementById("fillFormLink").addEventListener("click", function(event) {
+  event.preventDefault();
+  showPopup();
+});
