@@ -1,8 +1,9 @@
 
 // NAVBAR------------------------------
 let navMenu = false; 
+let myInterval = setInterval(setSlider, 3800);
 
-// Function to change the slider margin on click
+// Function to change the slider and steps alignment on click
   function respMenu(){
       
     if (navMenu == false){
@@ -10,6 +11,7 @@ let navMenu = false;
     document.querySelector(".menu").style.display = "flex";
     document.querySelector(".slider").style.top = "160px";
     document.querySelector(".steps").style.marginTop = "160px";
+    document.querySelector(".slidercontrols").style.bottom = "-60%";
     // document.querySelector(".background").style.top = "80px";
     navMenu = true;
     
@@ -19,21 +21,25 @@ let navMenu = false;
         document.querySelector(".menu").style.display = "none";
         document.querySelector(".slider").style.top = "0";
         document.querySelector(".steps").style.marginTop = "10px";
+        document.querySelector(".slidercontrols").style.bottom = "4%";
         // document.querySelector(".background").style.top = "0";
         navMenu = false;
     }; 
   }
 
+/* These functions mess up the slider ugh!!!
 
 // Function to change the screen margin on screen width > 800px
   function screenWidth(x) {
       if (x.matches) { // If media query matches
         console.log("screenWidth ABOVE 800px function triggered"); 
-        
         document.querySelector(".menu").style.display = "block";
         document.querySelector(".slider").style.top = "0";
         document.querySelector(".steps").style.marginTop = "30px";
-        document.querySelector(".background").style.marginTop = "0";   
+        document.querySelector(".background").style.marginTop = "0";
+        navMenu = true;
+        myInterval = clearInterval(setSlider);
+        myInterval = setInterval(setSlider, 3800);  
       }
     }
     // Don't fully understand this, but the if clause made it work
@@ -41,7 +47,6 @@ let navMenu = false;
     if (x >= window.matchMedia("(width: 800px)")){
       screenWidth(x); // Invokes function
       x.addListener(screenWidth); // Attach listener function on state changes
-      // myInterval = setInterval(setSlider, 4500);
     }
 
 // Function to change the screen margin on screen width < 800px
@@ -52,8 +57,11 @@ let navMenu = false;
       document.querySelector(".menu").style.display = "none";
       document.querySelector(".slider").style.top = "0";
       document.querySelector(".steps").style.marginTop = "10px";
+      document.querySelector(".slidercontrols").style.bottom = "4%";
       document.querySelector(".background").style.marginTop = "0";
       navMenu = false;
+      myInterval = clearInterval(setSlider);
+      myInterval = setInterval(setSlider, 3800);
     }
   }
 
@@ -61,8 +69,9 @@ let navMenu = false;
   if (x1 <= window.matchMedia("(width: 799px)") ){
     screenWidth2(x1); // Invokes function
     x1.addListener(screenWidth2); // Attach listener function on state changes
-    // myInterval = setInterval(setSlider, 4500);
   }
+
+*/
 
 // STEPS------------------------------
 // Steps pre Arrival
@@ -101,7 +110,7 @@ let navMenu = false;
 
 // SLIDER------------------------------
 //Slider Variables:
-let slider1 = `
+let slider1 = ` 
     <a href="#stepsanchor" class="sliderbutton">
     <div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Check the <span>Steps</span> before and after landing!</p></div>
     <img class="background" src="images/Slider1-steps.jpg" alt="Photo of student at airport" title="Check the Steps pre and after landing!">             
@@ -114,15 +123,15 @@ let slider2 = `
     </a>`;
 
 let slider3 = `
-    <a href="transportation.html" class="sliderbutton"><div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Handle <span>Transportation</span> like a pro commuter!</p></div>
+    <a href="transportation.html" class="sliderbutton"><div class="slidertext1"><img class="arrow" src="images/largearrow.png" alt=""> <p>Handle <span>Transportation</span> like a local!</p></div>
     <img class="background" src="images/Slider3-transportation.jpg" alt="Photo of Toronto Street Car">
     </a>`;
 
-myInterval = setInterval(setSlider, 4000);
+
 let slider = document.querySelector(".slider");
 slider.innerHTML = slider1;
- 
-// Slider Function
+
+// Slider Function (and next button)
 function setSlider() {
   console.log("setSlider function triggered");
   if (slider.innerHTML == slider1){
@@ -135,4 +144,15 @@ function setSlider() {
     slider.innerHTML = slider1;
   }
 }
-  
+// Slider Prev Button
+function prevSlide() {
+  if (slider.innerHTML == slider1){
+    slider.innerHTML = slider3;
+  }
+  else if (slider.innerHTML == slider2){
+    slider.innerHTML = slider1;
+  }
+  else if (slider.innerHTML == slider3){
+    slider.innerHTML = slider2;
+  }
+}
