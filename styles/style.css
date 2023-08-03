@@ -146,6 +146,7 @@ header #logo{
         height: 450px;
         /* border: 1px solid blue; */
         padding: 0;
+        
     }
 
     .background{
@@ -190,6 +191,39 @@ header #logo{
         color: #000;
         font-size: 1.1em;
     }
+    .carousel{
+        position: relative;
+    }
+    .slidercontrols{
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        bottom: 4%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+
+    }
+    .sliderbtn{
+        font-size: 2em;
+        font-weight: 600;
+        margin: 0 5px;
+        color: #444444;
+        background-color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        box-shadow: 1px 1px 6px #000000;
+    }
+
+    .sliderbtn:hover{
+        background-color: #e25252;
+        color: #fff;
+    }
+
 
     .banner img{
          width: 100%;
@@ -644,30 +678,49 @@ ul.recreation1 li a:hover {
 }
 
 /*FOOTER*/
-#footer {
+.footer{
     font-size: 14px;
-    padding: 1.5em 0;
-    background: #e25252;
-    color: #ffffff;
-    text-align: center;
-}
-.foot p{
-    /* margin-left: 390px; */
-    margin: 0.2em 0;
-    font-size: 20px;
-}
-.foot hr{
-    margin: 15px 0;
-    height: 1.5px;
-    color: #FFE4E1;
-}
-.foot a{
-    /* margin-left: 550px; */
-    margin: 0;
-    font-size: 16px;
-    color:#fff;
+    padding:30px 0;
+    background-color:#e25252;
+    color: pink;
+  }
+  a{
     text-decoration: none;
-}
+  }
+  .footer a{
+    color: papayawhip;
+  }
+  .footer p{
+    color: papayawhip;
+  }
+  .footer h3{
+    color: pink;
+  }
+  .sociallinks{
+    margin-top: 10px;
+    
+  }
+  .footer hr{
+    border: none;
+    background: papayawhip;
+    height: 2px;
+    margin: 20px 0;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .footercontainer{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .footerrow{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
     
 /*RESPONSIVENESS*/
 /*950px*/
