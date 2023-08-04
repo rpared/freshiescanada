@@ -1,8 +1,10 @@
-// NAVBAR------------------------------
-let navMenu = false;
+//Slider Initialized
 let myInterval = setInterval(setSlider, 3800);
 
-// Function to change the slider and steps alignment on click
+// NAVBAR------------------------------
+let navMenu = false;
+
+// Function to display the hamburger menu
 function respMenu() {
   if (navMenu == false) {
     console.log("Hamburger btn function triggered");
@@ -22,16 +24,16 @@ function respMenu() {
 }
 
 
-// Function to change the screen margin on screen width > 800px
+// Function to reposition stuff on screen width > 800px
 function widthResize() {
   let w = window.outerWidth;
- //let h = window.outerHeight;
   if (w >= "800"){
     console.log("screenWidth ABOVE 800px function triggered");
     document.querySelector(".menu").style.display = "block";
     document.querySelector(".slider").style.top = "0";
     document.querySelector(".steps").style.marginTop = "30px";
     document.querySelector(".slidercontrols").style.bottom = "4%";
+    navMenu = false;
   }
   else{
     navMenu = false;
