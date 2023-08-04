@@ -140,52 +140,7 @@ nav li a:active{
     }
             
 
-/*SLIDERS & BANNERS*/
-    #slider{
-        margin-top: 0;
-        height: 450px;
-        position: relative;
-    }
-
-    #slider img.background{
-        height: 450px;
-        object-fit: cover;
-        object-position: 10% 0;
-        
-    }
-    .slidertext1 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border-top: 5px solid #ffffff80;
-        border-bottom: 5px solid #ffffff80;
-        border-left: 5px solid #ffffff80;
-        padding: 1em 0 1em 1em;
-        position: absolute;
-        top: 22%;
-        right: 0%;
-    }
-    .arrow{
-        max-width: 200px;
-        opacity: 0.7;
-    }
-    .slidertext1 p{
-        font-family: rubikMedium;
-        max-width: 200px;
-        margin-left: 1em;
-        text-align: left;
-        font-weight: 600;
-        font-style: oblique;
-        font-size: 1.5em;
-        color: #4f4f4f;
-        padding: 0.5em 5em 0.5em 1em;
-        background-color: #ffffffeb;
-        text-shadow: 1px 1px 6px #ffffff;
-    }
-    .slidertext1 p span{
-        color: #000;
-        font-size: 1.1em;
-    }
+/*BANNERS*/
 
     #slider img, .banner img{
          width: 100%;
@@ -194,34 +149,13 @@ nav li a:active{
     .banner{
         filter: grayscale();
         -webkit-filter: grayscale();
-
     }
 
     .banner:hover{
         filter: none;
         -webkit-filter: none;
-
     }
 
-    #slider img:hover + .tooltip{
-        display: block;
-    }
-
-    .tooltip{
-        font-size: 2em;
-        position: absolute;
-        top: 200px;
-        left: 50px;
-        display: none;
-        color: #e25252;
-        text-shadow:0 0 15px #ffffff;
-    }
-
-    fn{
-        font-size: 0.6em;
-        color: rgb(142, 142, 142);
-        margin-left: 1em;
-    }
 
 /*BODY & MAIN - Titles, headings, paragraphs*/
     main{
@@ -282,59 +216,6 @@ nav li a:active{
 
     .categories p, .categories ul{
         color:#444444;
-    }
-/*STEPS PRE & POST ARRIVAL*/
-    section.steps{
-        margin-top: 2em;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3em;
-    }
-
-    section.steps button{
-        width: 25em;
-        border: 12px solid #ffffff;
-        border-radius: 6px;
-        box-shadow:1px 1px 5px #bdbdbd;
-        background-color: #f6f6f6;
-        margin: 0 1em;
-        cursor: pointer;
-    }
-
-    section.steps button:hover{
-        background-color: #e2525255;
-        box-shadow:1px 1px 8px #2f2f2f;
-    }
-
-    section.steps div.big-number{
-        font-family: rubikMedium;
-        font-size: 6em;
-        margin: 0;
-        color: #7b7b7b;
-    }
-
-    section.steps h3{
-        font-family: rubikMedium;
-        font-size: 1.2em;
-        margin: 0 0 0.6em;
-        color: #444444;
-    }
-
-    section.steps span{
-        color: #e25252;
-        font-size: 120%;
-    }
-
-    section.steps ol li{
-        color: #2f2f2f;
-        padding: 2px 0;
-        text-align: left;
-        list-style: decimal;
-    }
-
-    section.steps ol li::marker{
-        font-weight: bold;
-        color: #e25252;
     }
     
 /*EXTERNAL LINKS*/
@@ -502,7 +383,7 @@ ul.recreation1 li a:hover {
 @media only screen and (max-width: 950px) {
     
         #logo{
-            width: 15em;
+            width: 14em;
         }
     
         #navbar_back{ 
@@ -515,17 +396,23 @@ ul.recreation1 li a:hover {
     
         .menu{
             display: block;
+            padding-bottom: 0px;
+        }
+
+
+        .banner{
+            margin-top: -3px;
         }
         
         nav ul li{
             /* margin: 0.6em 1.1em 0.2em 0.4em; */
-            margin: 0.3em 1em 0.2em 0;
+            margin: 0.3em 1em 0.5em 0;
         }
     
         nav li a{
             color: #fff;
             margin: 0.2em ;
-            padding: 0.3em ;
+            padding: 0.3em;
         }
     
         .dropdown-content a {
@@ -555,11 +442,10 @@ ul.recreation1 li a:hover {
     header{
         position: static;
         box-shadow:none;
-
     }
 
     #logo{
-        width: 14em;
+        width: 13em;
     }
 
     nav{
@@ -687,8 +573,6 @@ ul.recreation1 li a:hover {
     .sectionheader img{
         height: 2.8em;
     }
-
-
 
     .team img{
         width: 160px;
