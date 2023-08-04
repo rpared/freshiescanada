@@ -727,7 +727,7 @@ ul.recreation1 li a:hover {
 /*950px*/
 @media only screen and (max-width: 950px) {
     #logo{
-        width: 15em;
+        width: 14em;
     }
 
     #navbar_back{ 
@@ -783,7 +783,7 @@ ul.recreation1 li a:hover {
     }
 
     #logo{
-        width: 14em;
+        width: 13em;
     }
 
     nav{
@@ -963,4 +963,3 @@ ul.recreation1 li a:hover {
     }
 
 }
-
