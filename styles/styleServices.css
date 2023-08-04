@@ -397,16 +397,18 @@ ul.recreation1 li a:hover {
         .menu{
             display: block;
             padding-bottom: 0px;
+            margin-bottom: 0;
+            margin-top: 17px;
         }
 
 
         .banner{
-            margin-top: -3px;
+            margin-top: -1px;
         }
         
         nav ul li{
             /* margin: 0.6em 1.1em 0.2em 0.4em; */
-            margin: 0.3em 1em 0.5em 0;
+            margin: 0.25em 1em 0.5em 0;
         }
     
         nav li a{
