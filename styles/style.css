@@ -204,18 +204,18 @@ header #logo{
         margin: 0;
         display: flex;
         justify-content: center;
-        z-index: 10;
+        z-index: 4;
 
     }
     .sliderbtn{
         font-size: 2em;
         font-weight: 600;
         margin: 0 5px;
-        padding: 0 6px;
+        padding: 3px 8px 0;
         color: #444444;
-        background-color: #fff;
+        background-color: #ffffffce;
         border: none;
-        border-radius: 3px;
+        border-radius: 8px;
         cursor: pointer;
         box-shadow: 1px 1px 6px #000000;
     }
