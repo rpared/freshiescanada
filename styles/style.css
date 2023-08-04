@@ -211,6 +211,7 @@ header #logo{
         font-size: 2em;
         font-weight: 600;
         margin: 0 5px;
+        padding: 0 6px;
         color: #444444;
         background-color: #fff;
         border: none;
