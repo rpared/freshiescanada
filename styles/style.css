@@ -359,21 +359,6 @@ header #logo{
         color: #e25252;
     }
     
-/*EXTERNAL LINKS*/
-    main a, section a{  
-        margin-top: 0.8em;
-        margin-left: 1.3em;
-        padding: 0.4em;
-        text-decoration: none;
-        font-family: PopReg;
-        color: rgb(88, 88, 88);
-        border-radius: 4px;
-    }
-
-    main a:hover, section a:hover{  
-        background-color: #e25252;
-    }
-
 
 /* START OF ABOUT US AND SERVICES SECTION*/
 /*----------------------------------------------
@@ -398,7 +383,6 @@ header #logo{
     padding-bottom: 90px;
     margin-left: 35px;
   
-    
 }
 .app-text h1{
     color: #fff4f4;
@@ -470,6 +454,7 @@ header #logo{
     padding-left: 30px;
     padding-right: 30px;
     border-width: 3px;
+
 }
 
 .knowbtn:hover{
@@ -696,6 +681,9 @@ ul.recreation1 li a:hover {
   }
   .footer h3{
     color: pink;
+  }
+  .footer ul{
+    padding-left:10px;
   }
   .sociallinks{
     margin-top: 10px;
@@ -956,6 +944,21 @@ ul.recreation1 li a:hover {
 
     .col1 img{
         width: 120px;
+    }
+
+    .app-text p, .services p{
+        font-size: 16px;
+        padding: 5px 35px;
+        word-wrap: break-word;
+    }
+
+    .app-text h1, .services h1{
+        font-size: 2.2em;
+        margin: 0 auto;
+    }
+
+    .knowbtn{
+        margin: 0 0 0 35%;
     }
 
     .foot p{
