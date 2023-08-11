@@ -386,20 +386,25 @@ header #logo{
 }
 .app-text h1{
     color: #fff4f4;
+    margin-left: 100px;
     font-size: 75px;
     padding-bottom: 10px;
-    padding-left: 60px; 
+    padding-left: 60px;
+    
   }
 
 .app-text p{
     color: #f5f5dc;
     font-size: 20px;
-    padding: 15px 60px 20px;
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 } 
 /*----------------------------------------------
 ----------SERVICES SECTION--------------------
 ----------------------------------------------*/
 #services {
+    height: 50vh;
     background-color: #fff;
     background-size: cover;
     margin-top: -110px;
@@ -408,19 +413,21 @@ header #logo{
 .services img{
     float:left;
     width:30%;
-    padding-top: 50px;
+    padding-top: 100px;
     border-radius: 60%;
     padding-right: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     margin-left: 55px;
   
     
 }
-.services h1{
+.serv h1{
     color: #e25252;
+    margin-left: 100px;
     font-size: 75px;
     padding-bottom: 10px;
-    padding-left: 2px;
+    padding-left: 60px;
+    
   }
 
 .services p{
@@ -431,162 +438,94 @@ header #logo{
     padding-top: 15px;
 } 
 .pp {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
-/*KNOW MORE BUTTON*/
+.servs h2{
+    color: #e25252;
+    margin-left: 100px;
+    font-size: 75px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+ .servscol-3 h1 p{
+    float: right;
+}
+ .servscol-3 img{
+    float: left;
+}
+ .servscol-3 p{
+    margin-left: 20px;
+    margin-bottom: 35px;
+    margin-right: 200px;
+}
+ .servsrow{
+    margin-left: -50px;
+}
+ .servssmall-container{
+ width: 1100px;
 
-.btn-container{
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
+.servscol-3{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.servscol-3 img{
+    width: 150px;
+    padding: 20px;
+  }
+   .categoriesservs{
+    margin: 70px 0;
+    margin-bottom: 150px;
+  }
+ .servscol-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    padding-left: 50px;
+    margin-bottom: 130px;
+    margin-top: 50px;
+    
+  }
+  .toto{
+    color: #e25252;
+    margin-left: 50px;
+    font-size: 75px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+  }
+  
+/*KNOW MORE BUTTON*/
 .knowbtn{
     background-color: #e25252;
     color: #ffffff;
+    width: 220px;
+    height: 55px;
     border: 2px solid transparent;
     font-family: PopBold;
     border-color: white;
     border-radius: 20px;
-    padding: 5px 30px;
-    margin: 5px auto;
-    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-width: 3px;
-    text-decoration: none;
-}
+    margin-bottom: 100px;
 
+}
 .knowbtn:hover{
     background-color: white;
     border-color: #e25252;
     border-width: 3px;
-    color: #e25252;  
+    color: #e25252;
+    
 }
 /* END OF ABOUT US AND SERVICES SECTION*/
 
-/*CONTACT FORM*/
-.container {
-    width: 90%;
-    margin: 50px auto; /* Center the container horizontally */
-    display: flex;
-    background-color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-
-  .contact-form h2{
-    color: #e25252;
-    font-size: 55px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-  }
-
-  .contact-form {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .form-heading {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  div.form-group {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 20px;
-    padding: 0 20px;
-  }
-  
-  .form-label {
-    display: block;
-    font-style: bold;
-    margin-bottom: 5px;
-    color: #c92424;
-    padding: 2px 12px;
-  }
-  
-  .form-input,
-  .form-textarea {
-    width: 90%;
-    margin: 0 auto;
-    padding: 12px;
-    border: 3px solid #c92424;
-    border-radius: 12px;
-    font-size: 16px;
-  }
-
-  .form-btn {
-    background-color: #e25252;
-    width: 170px;
-    height: 40px;
-    color: #ffffff;
-    border: 2px solid transparent;
-    font-family: PopBold;
-    border-color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-width: 3px;
-  }
-  
-  .form-btn:hover {
-    background-color: white;
-    border-color: #e25252;
-    border-width: 3px;
-    color: #e25252;
-  }
-  
-  .socialsinfo {
-    flex: 1;
-    background-color: #e25252;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .socialsinfo h3{
-    margin-bottom: 20px;
-    box-shadow: gray;
-    font-family: PopBold;
-    font-size: 30px;
-    text-shadow: gray;
-    text-decoration: wavy;
-    color: #e25252;
-  }
-  .bor{
-    background-color: #ffffff;
-    padding: 10px;
-  }
-  .socialslist {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .socialsitem {
-    display: inline-block;
-  }
-  
-  .socialslink img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .socialslink img:hover {
-    transform: scale(1.1);
-  }
-  
-/* END OF CONTACT FORM SECTION*/
-  
 
 /*SERVICES*/
     #services{
@@ -601,67 +540,11 @@ header #logo{
         height: 3px;
         color: #e25252;
     }
-
-/*RECREATION*/
-
-ul.recreation {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
-} 
-
-ul.recreation li{
-    display: grid;
-    line-height: 20px;
-   
+a{
+    text-decoration: none;  
 }
 
-ul.recreation li a {
-    margin-top: 2em;
-    margin-left: 1.3em;
-    padding: 0;
-    text-decoration: none;
-    font-family: PopReg;
-    color: rgb(88, 88, 88);
-    background-color: #fff;
-    border-radius: 4px;
-    border: none;
-    box-shadow: none;
-}
 
-ul.recreation1 li a {
-    margin-top: 2em;
-    margin-left: 1.3em;
-    padding: 0;
-    text-decoration: none;
-    font-family: PopReg;
-    color: rgb(88, 88, 88);
-    background-color: #fff;
-    border-radius: 4px;
-    border: none;
-    box-shadow: none;
-}
-
-ul.recreation li a:hover {
-    margin-top: 2em;
-    margin-left: 1.3em;
-    padding: 0;
-    text-decoration: none;
-    font-family: PopReg;
-    color:#e25252;
-
-}   
-
-ul.recreation1 li a:hover {
-    margin-top: 2em;
-    margin-left: 1.3em;
-    padding: 0;
-    text-decoration: none;
-    font-family: PopReg;
-    color:#e25252;
-}
-
-/*FOOTER*/
 .footer{
     font-size: 14px;
     padding:30px 0;
@@ -708,7 +591,7 @@ ul.recreation1 li a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-    
+
 /*RESPONSIVENESS*/
 /*950px*/
 @media only screen and (max-width: 950px) {
@@ -757,14 +640,6 @@ ul.recreation1 li a:hover {
 
     .col1 img{
         width: 180px;
-    }
-
-    .container {
-        width: 100%;
-        }
-
-    aside.socialsinfo{
-        display: none;
     }
 
 }
@@ -903,7 +778,6 @@ ul.recreation1 li a:hover {
         margin-right: 0;
     }
 
-
     main{
         margin: 2em 2em ;
     }
@@ -959,23 +833,8 @@ ul.recreation1 li a:hover {
     }
 
     .app-text h1, .services h1{
-        font-size: 2.3em;
-        padding: 5px 35px;
-        margin: 0;
-        word-wrap: break-word;
-    }
-    div.app-text{
-        margin: 30px 0;
-    }
-
-    .app-text img, .services img{
-        display: block;
-        float: none;
-        padding: 0;
-        margin: 0 auto 15px;
-    }
-    h2.form-heading{
-        font-size: 2.3em;
+        font-size: 2.2em;
+        margin: 0 auto;
     }
 
     .foot p{

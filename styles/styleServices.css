@@ -220,27 +220,18 @@ nav li a:active{
     
 /*EXTERNAL LINKS*/
     main a, section a{  
-    background-color: #e25252;
-    width: 170px;
-    color: #ffffff;
-    border: 2px solid transparent;
-    font-family: PopBold;
-    border-color: white;
-    border-radius: 20px;
-    padding: 5px 30px;
-    margin-left: 15px;
-    border-width: 3px;
-    text-decoration: none;
-        /* margin-top: 0.8em;
-        margin-left: 1.3em;
-        padding: 0.4em;
+        display: block;
+        background-color: #e25252;
+        width: fit-content;
+        color: #ffffff;
+        border: 2px solid transparent;
+        font-family: PopBold;
+        border-color: white;
+        border-radius: 20px;
+        padding: 5px 30px;
+        margin: 20px 0 25px 15px;
+        border-width: 3px;
         text-decoration: none;
-        font-family: PopReg;
-        color: rgb(88, 88, 88);
-        background-color:#fff;
-        border-radius: 4px;
-        border: 2px solid rgb(177, 177, 177);
-        box-shadow: 1px 1px 3px #b5b5b5; */
     }
 
     main a:hover, section a:hover{  
@@ -248,8 +239,6 @@ nav li a:active{
     border-color: #e25252;
     border-width: 3px;
     color: #e25252;
-        /* background-color: #e25252;
-        color: #fff; */
     }
 
 /*ABOUT*/
@@ -551,7 +540,6 @@ ul.recreation1 li a:hover {
         font-size: 0.8em;
         margin: 0 auto;
         color: #595959;
-        /* border-left: 1px solid #e25252; */
         background-color: #fff;
         text-shadow: none;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -608,6 +596,10 @@ ul.recreation1 li a:hover {
 
     .foot p{
         font-size: 1em;
+    }
+
+    .footer-col-2, .footer-col-3{
+        padding: 0 10px;
     }
 
     ul.recreation {
