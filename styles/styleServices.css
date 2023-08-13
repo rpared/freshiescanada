@@ -147,8 +147,8 @@ nav li a:active{
     }
 
     .banner{
-        filter: grayscale();
-        -webkit-filter: grayscale();
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
     }
 
     .banner:hover{
@@ -287,13 +287,11 @@ nav li a:active{
 ul.recreation {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
 } 
 
 ul.recreation li{
     display: grid;
     line-height: 20px;
-   
 }
 
 ul.recreation li a {
@@ -329,7 +327,6 @@ ul.recreation li a:hover {
     text-decoration: none;
     font-family: PopReg;
     color:#e25252;
-
 }   
 
 ul.recreation1 li a:hover {
@@ -340,8 +337,13 @@ ul.recreation1 li a:hover {
     font-family: PopReg;
     color:#e25252;
 }
-
-/*FOOTER*/
+/*SIMCARD*/
+.mobileproviders{
+    margin-left: 25px;
+}
+.mobileproviders h3{
+    color:#444444;
+}
 
 /*FOOTER*/
 .footer{
@@ -472,9 +474,7 @@ ul.recreation1 li a:hover {
         max-height: none;
         margin: 0;
         background-image: none;
-        background-size: none;
-        background-repeat: none;
-        background-position: none;
+        background-repeat:no-repeat
     }
 
    #btnHamburger{

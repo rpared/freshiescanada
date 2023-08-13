@@ -8,48 +8,48 @@
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="index.js" defer></script>
-
     <title>Freshies Canada</title>
 </head>
-<body onresize="widthResize()">
-<!-- HEADER     -->
-    <header>
-        <a><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
-        </a>
-    <!-- NAVBAR -->
-           <nav>
-            <button id="btnHamburger" type="button"onclick="respMenu()">
-                <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
-            </button>
-            <div id="navbar_back">
-                    <ul class="menu">
-                        <li><a class="currentPage" href="index.html">HOME</a></li>
-                        <li><a href="#aboutus">ABOUT</a></li>
-                        <li class="dropdown">                   
-                                <a class="dropbtn" href="services.html">SERVICES
-                                    <img class="listarrow" src="images/listarrow.png" alt="">
-                                </a>
-                                <div class="dropdown-content">
-                                    <a href="documentation.html">Documentation</a>
-                                    <a href="accommodation.html">Accommodation</a>
-                                    <a href="simcard.html">SIM Card</a>
-                                    <a href="transportation.html">Transportation</a>
-                                    <a href="parttime.html">Part-time Jobs</a>
-                                    <a href="recreation.html">Recreation</a>
-                                </div>                    
-                        </li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-            </div>
-        </nav>
-    </header>
 
+<body onresize="widthResize()">
+  <!-- HEADER     -->
+  <header>
+      <a><img id="logo" src="images/FreshiesLogoColor_72dpi.png"  alt="Freshies in Canada Logo">
+      </a>
+      <!-- NAVBAR -->
+      <nav>
+        <button id="btnHamburger" type="button" onclick="respMenu()">
+            <img class="hamburgerImg" src="images/HamburgerIcon.png"  alt="Menu">
+        </button>
+        <div id="navbar_back">
+            <ul class="menu">
+                <li><a class="currentPage" href="index.html">HOME</a></li>
+                <li><a href="#aboutus">ABOUT</a></li>
+                <li class="dropdown">                   
+                    <a class="dropbtn" href="services.html">SERVICES
+                        <img class="listarrow" src="images/listarrow.png" alt="">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="documentation.html">Documentation</a>
+                        <a href="accommodation.html">Accommodation</a>
+                        <a href="simcard.html">SIM Card</a>
+                        <a href="transportation.html">Transportation</a>
+                        <a href="parttime.html">Part-time Jobs</a>
+                        <a href="recreation.html">Recreation</a>
+                    </div>                    
+                </li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+      </nav>
+  </header>
+  <main>
     <!-- JAVASCRIPT SLIDER -->
     <div class="carousel">
       <div class="slidercontrols">
-        <button class="sliderbtn" type="button" onclick="prevSlide()"><</button>
+        <button class="sliderbtn" type="button" onclick="prevSlide()">&lt;</button>
         <button class="sliderbtn" type="button" onclick="setSlider()">></button>
       </div>
     
@@ -62,163 +62,163 @@
     </div>
 
     <!-- STEPS PRE AND POST ARRIVAL -->
-    <section class="steps anchor" id="stepsanchor" type="button">
-        <button id="Steps-btn1" onclick="getStepsPre()">
-          <div class="big-number">1</div>
-          <h3>Steps <span>PRE</span> arrival</h3>
+    <section class="steps anchor" id="stepsanchor" >
+        <button id="Steps-btn1" type="button" onclick="getStepsPre()">
+          <span class="big-number">1</span>
+          <span class="heading">Steps <span>PRE</span> arrival</span>
         </button>
 
-        <button id="Steps-btn2" onclick="getStepsPost()" type="button">
-           <div class="big-number">2</div>
-           <h3>Steps <span>POST</span> arrival</h3>
+        <button id="Steps-btn2" type="button" onclick="getStepsPost()">
+           <span class="big-number">2</span>
+           <span class="heading">Steps <span>POST</span> arrival</span>
         </button>
     </section>
-    
-<!--ABOUT US SECTION -->
-<section id="aboutus">
-  <div class="app-text">
-      
-    <img src="images/team (2).png" alt="A picture of a team of 3">
-    <h1>ABOUT US</h1>
-    <p> Welcome to our website, your comprehensive guide to transportation, accommodation, and part-time job 
-        opportunities for international students in Toronto. We understand the challenges faced by students 
-        in a new city, and we are here to provide you with the information you need to navigate your way 
-        through this exciting journey.
-          At our website, we strive to empower international students by equipping them with the knowledge 
-          and resources they need to thrive in Toronto. We aim to be your go-to source for all things related 
-          to transportation, accommodation, and part-time jobs. Our team is dedicated to providing accurate and 
-          up-to-date information, ensuring you have a smooth and successful experience during your time in Toronto.
-          <br>
-    </p>
-    <p>
-    <b>Team Alpha comprises Roger, Amandeep and Karina. We have teamed up to build a website which would 
-      be convient for the freshers. Be sure to take a look at our services.</b>
-    We are a group of recent grads, previously international students now advising new international 
-    students coming to Canada. Our objective is helping newcomers navigate their educational journey and 
-    adjust to life in a new country. Since we struggled ourselves with issues you might encounter 
-    we may be able to offer some aid and tips. Our firsthand experience and knowledge could provide 
-    valuable insights and support to make your transition smoother. 
-      Whether you are a new student or have been in Toronto for a while, we are here to support you every step of the way. 
-      Explore our website and let us be your trusted companion in making your study abroad journey in Toronto unforgettable.
-    </p>
-    <br/>
-  </div>
-</section>
-<!-- SERVICES SECTION -->
-<section id="services">
-  <div class="services">
-      
-      <img src="images/service.png" alt="A picture of a team of 3"> 
-      <h1>SERVICES</h1>
-      <p>
-          Freshies in Canada is an information website specifically designed to assist 
-          new international students in their journey of studying and living in Canada. 
-          Our comprehensive services cover a wide range of areas, including documentation, 
-          accommodation, SIM cards, transportation, part-time jobs, recreation, and money-saving tips. 
-          We provide valuable resources, guidance, and practical advice to ensure a smooth and successful 
-          transition for international students. 
-      </p>
-      <p class="pp">
-          Whether you need assistance with visa documentation, finding suitable accommodation, obtaining 
-          a SIM card, navigating transportation options, securing part-time employment, discovering recreational 
-          activities, or managing your finances, Freshies in Canada is here to support you every step of the way.
-            Our goal is to empower and equip you with the knowledge and resources needed to make the most of your 
-            experience as an international student in Canada.
-            Join us at Freshies in Canada and embark on an enriching adventure, Where your dream of studying 
-            in Canada starts here, and we're excited to be a part of your extraordinary journey. Welcome to Freshies in Canada!
+  </main>
+
+  <!--ABOUT US SECTION -->
+  <section id="aboutus" class="anchor">
+    <div class="app-text">
+        
+      <img src="images/team(2).png" alt="A picture of a team of 3">
+      <h1>ABOUT US</h1>
+      <p> Welcome to our website, your comprehensive guide to transportation, accommodation, and part-time job 
+          opportunities for international students in Toronto. We understand the challenges faced by students 
+          in a new city, and we are here to provide you with the information you need to navigate your way 
+          through this exciting journey.
+            At our website, we strive to empower international students by equipping them with the knowledge 
+            and resources they need to thrive in Toronto. We aim to be your go-to source for all things related 
+            to transportation, accommodation, and part-time jobs. Our team is dedicated to providing accurate and 
+            up-to-date information, ensuring you have a smooth and successful experience during your time in Toronto.
             <br>
       </p>
-      <div class="btn-container">
-        <a class="knowbtn" href="services.html" >KNOW MORE</a>
-      </div>
-              
-  </div>
-</section>
-<!-- SERVICES SECTION -->
-
-
-
-<!--Contact form-->
-<section id="contact">
-    <div class="container">
-        <section class="contact-form">
-          <h2 class="form-heading">CONTACT US</h2>
-          <form action="#" method="POST">
-            <div class="form-group">
-              <label for="name" class="form-label">Name:</label>
-              <input type="text" id="name" name="name" class="form-input" required>
-            </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" id="email" name="email" class="form-input" required>
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message:</label>
-              <textarea id="message" name="message" class="form-textarea" rows="4" required></textarea>
-            </div>
-            <div class="btn-container">
-            <button type="submit" class="form-btn">SUBMIT</button>
-            </div>
-          </form>
-        </section>
-        <aside class="socialsinfo">
-          <h3 class="bor">CONNECT WITH US</h3>
-          <ul class="socialslist">
-            <li class="socialsitem">
-              <a href="#" class="socialslink">
-                <img src="images/Facebook.png" alt="Facebook">
-              </a>
-            </li>
-            <li class="socialsitem">
-              <a href="#" class="socialslink">
-                <img src="images/Instagram.png" alt="Twitter">
-              </a>
-            </li>
-            <li class="socialsitem">
-              <a href="#" class="socialslink">
-                <img src="images/Twitter.png" alt="Instagram">
-              </a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-</section>
-
-<!--Contact form-->
-
-<!-- FOOTER -->
-<footer id="footer">
-    <div class="footer">
-      <div class="footercontainer">
-        <div class="footerrow">
-          <div class="footer-col-1">
-            <h3>About Us</h3>
-            <p>This website was created by a group of 3<br>
-            international students to help other students<br>
-            during their academic journey in Canada.</p>
-          </div>
-          <div class="footer-col-2">
-            <h3>Important Links</h3>
-            <ul class="text">
-              <li><a href="services.html">Our Sevices</a></li>
-              <li><a href="documentation.html">Documentation</a></li>
-            </ul>
-          </div>
-          <div class="footer-col-3">
-            <h3>Follow Us</h3>
-            <div class="sociallinks">
-              <a href="#"><img src="images/Facebook.png" width="40" height=40></a>
-              <a href="#"><img src="images/Instagram.png" width="40" height=40></a>
-              <a href="#"><img src="images/Twitter.png" width="40" height=40></a>
-           </div>
-          </div>
-        </div>
-        <hr>
-        <p class="copyright">&copy; 2023 - Designed by Team Alpha</p>
-      </div>
+      <p>
+      <b>Team Alpha comprises Roger, Amandeep and Karina. We have teamed up to build a website which would 
+        be convient for the freshers. Be sure to take a look at our services.</b>
+      We are a group of recent grads, previously international students now advising new international 
+      students coming to Canada. Our objective is helping newcomers navigate their educational journey and 
+      adjust to life in a new country. Since we struggled ourselves with issues you might encounter 
+      we may be able to offer some aid and tips. Our firsthand experience and knowledge could provide 
+      valuable insights and support to make your transition smoother. 
+        Whether you are a new student or have been in Toronto for a while, we are here to support you every step of the way. 
+        Explore our website and let us be your trusted companion in making your study abroad journey in Toronto unforgettable.
+      </p>
+      <br>
     </div>
-</footer>
+  </section>
 
-    
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="services">
+        
+        <img src="images/service.png" alt="A picture of a team of 3"> 
+        <h1>SERVICES</h1>
+        <p>
+            Freshies in Canada is an information website specifically designed to assist 
+            new international students in their journey of studying and living in Canada. 
+            Our comprehensive services cover a wide range of areas, including documentation, 
+            accommodation, SIM cards, transportation, part-time jobs, recreation, and money-saving tips. 
+            We provide valuable resources, guidance, and practical advice to ensure a smooth and successful 
+            transition for international students. 
+        </p>
+        <p class="pp">
+            Whether you need assistance with visa documentation, finding suitable accommodation, obtaining 
+            a SIM card, navigating transportation options, securing part-time employment, discovering recreational 
+            activities, or managing your finances, Freshies in Canada is here to support you every step of the way.
+              Our goal is to empower and equip you with the knowledge and resources needed to make the most of your 
+              experience as an international student in Canada.
+              Join us at Freshies in Canada and embark on an enriching adventure, Where your dream of studying 
+              in Canada starts here, and we're excited to be a part of your extraordinary journey. Welcome to Freshies in Canada!
+              <br>
+        </p>
+        <div class="btn-container">
+          <a class="knowbtn" href="services.html" >KNOW MORE</a>
+        </div>
+                
+    </div>
+  </section>
+  <!-- SERVICES SECTION -->
+
+
+  <!--CONTACT FORM-->
+  <section id="contact" class="anchor">
+      <div class="container">
+          <section class="contact-form">
+            <h2 class="form-heading">CONTACT US</h2>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" required></textarea>
+              </div>
+              <div class="btn-container">
+              <button type="submit" class="form-btn">SUBMIT</button>
+              </div>
+            </form>
+          </section>
+          <aside class="socialsinfo">
+            <h3 class="bor">CONNECT WITH US</h3>
+            <ul class="socialslist">
+              <li class="socialsitem">
+                <a href="#" class="socialslink">
+                  <img src="images/Facebook.png" alt="Facebook">
+                </a>
+              </li>
+              <li class="socialsitem">
+                <a href="#" class="socialslink">
+                  <img src="images/Instagram.png" alt="Twitter">
+                </a>
+              </li>
+              <li class="socialsitem">
+                <a href="#" class="socialslink">
+                  <img src="images/Twitter.png" alt="Instagram">
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+  </section>
+  <!--CONTACT FORM-->
+
+  <!-- FOOTER -->
+  <footer id="footer">
+      <div class="footer">
+        <div class="footercontainer">
+          <div class="footerrow">
+            <div class="footer-col-1">
+              <h3>About Us</h3>
+              <p>This website was created by a group of 3<br>
+              international students to help other students<br>
+              during their academic journey in Canada.</p>
+            </div>
+            <div class="footer-col-2">
+              <h3>Important Links</h3>
+              <ul class="text">
+                <li><a href="services.html">Our Sevices</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+              </ul>
+            </div>
+            <div class="footer-col-3">
+              <h3>Follow Us</h3>
+              <div class="sociallinks">
+                <a href="#"><img src="images/Facebook.png" width="40" height=40 alt="Facebook logo"></a>
+                <a href="#"><img src="images/Instagram.png" width="40" height=40 alt="Instagram logo"></a>
+                <a href="#"><img src="images/Twitter.png" width="40" height=40 alt="Twitter logo"></a>
+            </div>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">&copy; 2023 - Designed by Team Alpha</p>
+        </div>
+      </div>
+  </footer>
+
+ 
 </body>
 </html>
