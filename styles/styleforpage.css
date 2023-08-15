@@ -410,17 +410,21 @@ header #logo{
     margin-top: -110px;
     
   }
+.services{
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
 .services img{
     float:left;
-    width:30%;
+    width:25%;
     padding-top: 100px;
     border-radius: 60%;
     padding-right: 30px;
     padding-bottom: 20px;
     margin-left: 55px;
-  
-    
 }
+
 .serv h1{
     color: #e25252;
     margin-left: 100px;
@@ -444,8 +448,9 @@ header #logo{
     color: #e25252;
     margin-left: 100px;
     font-size: 75px;
-    padding-bottom: 10px;
-    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 44px;
 }
  .servscol-3 h1 p{
     float: right;
@@ -462,6 +467,7 @@ header #logo{
     margin-left: -50px;
 }
  .servssmall-container{
+    max-width: 1000px;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -509,8 +515,8 @@ header #logo{
     margin-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     border-width: 3px;
     margin-bottom: 50px;
 
@@ -641,6 +647,7 @@ a{
     }
 
     .services p{
+        margin-top: 5px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -879,6 +886,16 @@ a{
     .footer-col-2, .footer-col-3{
         padding: 0 10px;
     }
+
+    .toto{
+        color: #e25252;
+        margin-left: 20px;
+        font-size: 75px;
+        padding-bottom: 10px;
+        padding-left: 35px;
+      }
+
+
     .services h1 {
         font-size: 50px;
         margin-left: -20px;
@@ -902,12 +919,14 @@ a{
         display: block;
         clear: both;
         padding-left: 10px;
-        margin-top: 20px;
+        margin-top: 10px;
         word-wrap: break-word;
     }
     .services img{
-        margin-top: -20px;
-        width: 190px;
+        display: block;
+        float: none;
+        margin-top: -80px;
+        width: 160px;
     }
 
 

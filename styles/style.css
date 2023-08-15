@@ -366,7 +366,8 @@ header #logo{
 
   .app-text{
     padding-top: 30px;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
+    max-width: 1500px;
   }
 .app-text img{
     float:right;
@@ -375,7 +376,7 @@ header #logo{
     margin-right: 10px;
     border-radius: 60%;
     padding-right: 30px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     margin-left: 35px;
   
 }
@@ -400,13 +401,18 @@ header #logo{
     margin-top: -110px;
     
   }
+.services{
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
 .services img{
     float:left;
     width:30%;
     padding-top: 50px;
     border-radius: 60%;
     padding-right: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     margin-left: 55px;
   
     
@@ -950,14 +956,15 @@ ul.recreation1 li a:hover {
         word-wrap: break-word;
     }
     div.app-text{
-        margin: 30px 0;
+        margin: 30px auto;
+        
     }
 
     .app-text img, .services img{
         display: block;
         float: none;
         padding: 0;
-        margin: 0 auto 15px;
+        margin: 0 auto 10px;
     }
     h2.form-heading{
         font-size: 2.3em;
